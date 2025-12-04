@@ -15,7 +15,15 @@ export default function Hero() {
   return (
     <section className="bg-linear-to-br relative flex min-h-screen items-center justify-center overflow-hidden from-gray-50 via-white to-orange-50">
       {/* Background Pattern */}
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1576086213369-97a306d36557?w=1920&q=80')] bg-cover bg-center opacity-5"></div>
+      <div className="absolute inset-0 opacity-5">
+        <ExportedImage
+          src="/images/hero-bg.jpeg"
+          alt=""
+          fill
+          className="object-cover"
+          priority={true}
+        />
+      </div>
 
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -103,7 +111,7 @@ export default function Hero() {
         >
           <div className="relative overflow-hidden rounded-2xl shadow-2xl">
             <ExportedImage
-              src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=800&q=80"
+              src="/images/hero.jpeg"
               alt="Nanofiber Technology"
               className="h-full w-full object-cover"
               width={800}

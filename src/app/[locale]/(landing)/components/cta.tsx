@@ -2,6 +2,7 @@
 
 import { ArrowRight, Award, CheckCircle2, Zap } from "lucide-react";
 import * as m from "motion/react-m";
+import ExportedImage from "next-image-export-optimizer";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -14,7 +15,15 @@ export default function CTA() {
   return (
     <section className="bg-linear-to-br relative overflow-hidden from-gray-50 via-white to-orange-50/30 py-20">
       {/* Background Pattern */}
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1920&q=80')] bg-cover bg-center opacity-5"></div>
+      <div className="absolute inset-0 opacity-5">
+        <ExportedImage
+          src="/images/cta-bg.jpeg"
+          alt=""
+          fill
+          className="object-cover"
+          priority={false}
+        />
+      </div>
 
       <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <m.div

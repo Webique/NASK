@@ -11,7 +11,15 @@ export default function Contact() {
   return (
     <section id="contact" className="relative overflow-hidden bg-white py-20">
       {/* Background Image */}
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1920&q=80')] bg-cover bg-center opacity-5"></div>
+      <div className="absolute inset-0 opacity-5">
+        <ExportedImage
+          src="/images/contact-bg.jpeg"
+          alt=""
+          fill
+          className="object-cover"
+          priority={false}
+        />
+      </div>
 
       <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <m.div
@@ -106,7 +114,7 @@ export default function Contact() {
             className="relative overflow-hidden rounded-2xl shadow-2xl"
           >
             <ExportedImage
-              src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&q=80"
+              src="/images/contact.jpeg"
               alt={t("imageAlt")}
               className="h-full w-full object-cover"
               width={800}

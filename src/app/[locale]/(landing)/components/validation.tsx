@@ -13,7 +13,15 @@ export default function Validation() {
   return (
     <section className="relative overflow-hidden bg-white py-20">
       {/* Background Pattern */}
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=1920&q=80')] bg-cover bg-center opacity-5"></div>
+      <div className="absolute inset-0 opacity-5">
+        <ExportedImage
+          src="/images/validation-bg.jpeg"
+          alt=""
+          fill
+          className="object-cover"
+          priority={false}
+        />
+      </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <m.div
@@ -49,7 +57,7 @@ export default function Validation() {
           className="mb-12 overflow-hidden rounded-2xl shadow-2xl"
         >
           <ExportedImage
-            src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=1200&q=80"
+            src="/images/validation.jpeg"
             alt="Laboratory Testing"
             className="h-64 w-full object-cover"
             width={1200}

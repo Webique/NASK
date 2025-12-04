@@ -63,7 +63,7 @@ export default function About() {
             {/* Technology Image */}
             <div className="relative overflow-hidden rounded-2xl shadow-xl">
               <ExportedImage
-                src="https://images.unsplash.com/photo-1532187643603-ba119ca4109e?w=800&q=80"
+                src="/images/technology.jpeg"
                 alt="Nanofiber Technology"
                 className="h-64 w-full object-cover"
                 width={800}
@@ -119,7 +119,7 @@ export default function About() {
             {/* Manufacturing Image */}
             <div className="relative overflow-hidden rounded-2xl shadow-xl">
               <ExportedImage
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80"
+                src="/images/manufacturing.jpeg"
                 alt="Manufacturing Process"
                 className="h-64 w-full object-cover"
                 width={800}

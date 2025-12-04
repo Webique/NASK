@@ -2,6 +2,7 @@
 
 import { Droplet, Heart, Leaf, Shield, Sparkles } from "lucide-react";
 import * as m from "motion/react-m";
+import ExportedImage from "next-image-export-optimizer";
 import { useTranslations } from "next-intl";
 
 export default function Certifications() {
@@ -75,7 +76,13 @@ export default function Certifications() {
         >
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-10">
-            <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80')] bg-cover bg-center"></div>
+            <ExportedImage
+              src="/images/certifications-pattern.jpeg"
+              alt=""
+              fill
+              className="object-cover"
+              priority={false}
+            />
           </div>
 
           <div className="relative z-10">

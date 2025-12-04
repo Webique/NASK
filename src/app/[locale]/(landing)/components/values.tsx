@@ -2,6 +2,7 @@
 
 import { Heart, Shield, Target } from "lucide-react";
 import * as m from "motion/react-m";
+import ExportedImage from "next-image-export-optimizer";
 import { useTranslations } from "next-intl";
 
 export default function Values() {
@@ -31,7 +32,15 @@ export default function Values() {
   return (
     <section className="relative overflow-hidden bg-white py-20">
       {/* Background Image */}
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1920&q=80')] bg-cover bg-center opacity-5"></div>
+      <div className="absolute inset-0 opacity-5">
+        <ExportedImage
+          src="/images/values-bg.jpeg"
+          alt=""
+          fill
+          className="object-cover"
+          priority={false}
+        />
+      </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <m.div
