@@ -82,7 +82,7 @@ export default function CTA() {
               {t("contactBtn")}
               <ArrowRight
                 size={20}
-                className="transition-transform group-hover:translate-x-1"
+                className="transition-transform group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1"
               />
             </Link>
           </div>
