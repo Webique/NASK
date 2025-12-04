@@ -51,14 +51,14 @@ export default function About() {
         </m.div>
 
         {/* Main Content Grid */}
-        <div className="grid gap-8 lg:grid-cols-2">
+        <div className="grid gap-8 lg:grid-cols-2 lg:items-stretch">
           {/* Left: Image + {t("keyAdvantages")} */}
           <m.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true, margin: "-100px" }}
-            className="space-y-6"
+            className="flex flex-col space-y-6"
           >
             {/* Technology Image */}
             <div className="relative overflow-hidden rounded-2xl shadow-xl">
@@ -81,7 +81,7 @@ export default function About() {
             </div>
 
             {/* {t("keyAdvantages")} Card */}
-            <div className="rounded-2xl bg-white p-8 shadow-lg">
+            <div className="flex flex-1 flex-col rounded-2xl bg-white p-8 shadow-lg">
               <div className="mb-6 flex items-center gap-3">
                 <div className="bg-linear-to-br from-primary to-accent flex h-12 w-12 items-center justify-center rounded-xl">
                   <CheckCircle2 size={24} className="text-white" />
@@ -114,7 +114,7 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true, margin: "-100px" }}
-            className="space-y-6"
+            className="flex flex-col space-y-6"
           >
             {/* Manufacturing Image */}
             <div className="relative overflow-hidden rounded-2xl shadow-xl">
@@ -137,7 +137,7 @@ export default function About() {
             </div>
 
             {/* Global Patents Card */}
-            <div className="rounded-2xl bg-white p-8 shadow-lg">
+            <div className="flex flex-1 flex-col rounded-2xl bg-white p-8 shadow-lg">
               <div className="mb-6 flex items-center gap-3">
                 <div className="bg-linear-to-br from-secondary flex h-12 w-12 items-center justify-center rounded-xl to-[#C13845]">
                   <Globe size={24} className="text-white" />

@@ -75,7 +75,7 @@ export default function Stats() {
                 <div className="bg-linear-to-br from-primary/5 to-secondary/5 absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
 
                 <div className="relative z-10">
-                  <div className="bg-linear-to-br from-primary to-secondary mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full shadow-lg transition-transform duration-300 group-hover:scale-110">
+                  <div className="bg-linear-to-br from-primary to-secondary mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full shadow-lg">
                     <Icon className="h-8 w-8 text-white" />
                   </div>
                   <div className="mb-2 text-4xl font-bold text-gray-900">

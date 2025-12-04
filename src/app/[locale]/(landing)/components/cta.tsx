@@ -48,35 +48,13 @@ export default function CTA() {
           </div>
 
           {/* Floating Sparkles */}
-          <m.div
-            animate={{
-              y: [0, -10, 0],
-              rotate: [0, 5, 0]
-            }}
-            transition={{
-              duration: 3,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }}
-            className="absolute right-8 top-8"
-          >
+          <div className="absolute right-8 top-8">
             <Sparkles className="h-8 w-8 text-white/40" />
-          </m.div>
+          </div>
 
-          <m.div
-            animate={{
-              y: [0, 10, 0],
-              rotate: [0, -5, 0]
-            }}
-            transition={{
-              duration: 4,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }}
-            className="absolute bottom-8 left-8"
-          >
+          <div className="absolute bottom-8 left-8">
             <Sparkles className="h-6 w-6 text-white/30" />
-          </m.div>
+          </div>
 
           {/* Content */}
           <div className="relative z-10 p-12 text-center md:p-16 lg:p-20">
@@ -116,7 +94,7 @@ export default function CTA() {
                     className="group relative overflow-hidden rounded-2xl bg-white/10 p-6 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:bg-white/20"
                   >
                     <div className="flex flex-col items-center gap-3">
-                      <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-white/20 ring-2 ring-white/30 transition-transform duration-300 group-hover:scale-110">
+                      <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-white/20 ring-2 ring-white/30">
                         <Icon className="h-7 w-7 text-white" />
                       </div>
                       <span className="font-semibold text-white">

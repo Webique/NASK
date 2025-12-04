@@ -61,13 +61,12 @@ export default function Contact() {
           className="mb-20 text-center"
         >
           <m.div
-            initial={{ opacity: 0, scale: 0, rotate: -180 }}
-            whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
-            transition={{ duration: 0.8, delay: 0.2, type: "spring" }}
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
             className="relative mb-8 inline-block"
           >
-            <div className="bg-primary/20 absolute inset-0 animate-pulse rounded-full blur-xl" />
             <div className="from-primary to-secondary ring-primary/10 bg-linear-to-br relative flex h-20 w-20 items-center justify-center rounded-2xl shadow-2xl ring-4">
               <Send size={40} className="text-white" />
             </div>
@@ -105,7 +104,7 @@ export default function Contact() {
                     {/* Content */}
                     <div className="relative z-10 flex items-start gap-5">
                       {/* Icon */}
-                      <div className="bg-linear-to-br from-primary to-secondary flex h-16 w-16 shrink-0 items-center justify-center rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105">
+                      <div className="bg-linear-to-br from-primary to-secondary flex h-16 w-16 shrink-0 items-center justify-center rounded-xl shadow-lg">
                         <Icon className="h-8 w-8 text-white" />
                       </div>
 

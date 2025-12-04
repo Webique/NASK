@@ -85,7 +85,7 @@ export default function Features() {
               <div className="bg-linear-to-r from-primary/5 to-secondary/5 absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
 
               <div className="relative z-10 flex items-start gap-3">
-                <div className="bg-linear-to-br from-primary to-secondary flex h-10 w-10 shrink-0 items-center justify-center rounded-full font-bold text-white shadow-md transition-transform duration-300 group-hover:scale-110">
+                <div className="bg-linear-to-br from-primary to-secondary flex h-10 w-10 shrink-0 items-center justify-center rounded-full font-bold text-white shadow-md">
                   {index + 1}
                 </div>
                 <p className="font-medium text-gray-700">{feature}</p>

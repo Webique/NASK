@@ -30,23 +30,18 @@ export default function Mission() {
         >
           {/* Floating Icon with Glow */}
           <m.div
-            initial={{ opacity: 0, scale: 0, rotate: -180 }}
-            whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
-            transition={{ duration: 0.8, delay: 0.2, type: "spring" }}
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
             className="relative mb-8 inline-block"
           >
-            <div className="bg-primary/20 absolute inset-0 animate-pulse rounded-full blur-xl" />
             <div className="bg-linear-to-br from-primary to-accent ring-primary/10 relative flex h-20 w-20 items-center justify-center rounded-2xl shadow-2xl ring-4">
               <Heart size={40} className="text-white" />
             </div>
-            <m.div
-              animate={{ rotate: 360 }}
-              transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-              className="absolute -right-2 -top-2"
-            >
+            <div className="absolute -right-2 -top-2">
               <Sparkles className="text-primary h-6 w-6" />
-            </m.div>
+            </div>
           </m.div>
 
           <m.h2
