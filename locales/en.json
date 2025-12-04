@@ -88,6 +88,78 @@
       "feature2": "Scalable Manufacturing",
       "feature3": "Proven Results"
     },
+    "stats": {
+      "title": "Our Global Impact",
+      "subtitle": "Trusted by manufacturers worldwide to deliver superior performance",
+      "stat1": {
+        "value": "5+",
+        "label": "Countries with Patents"
+      },
+      "stat2": {
+        "value": "99%+",
+        "label": "Antibacterial Efficacy"
+      },
+      "stat3": {
+        "value": "100+",
+        "label": "Manufacturing Partners"
+      },
+      "stat4": {
+        "value": "50%",
+        "label": "Cost Reduction"
+      }
+    },
+    "testimonials": {
+      "title": "What Our Partners Say",
+      "subtitle": "Hear from manufacturers who have transformed their products with NASK technology",
+      "testimonial1": {
+        "quote": "NASK's nanofiber technology has revolutionized our diaper production. The antibacterial properties and cost savings are remarkable.",
+        "author": "Dr. Sarah Chen",
+        "company": "Global Hygiene Solutions"
+      },
+      "testimonial2": {
+        "quote": "The superior breathability and fluid management have made our products stand out in the market. Our customers love the difference.",
+        "author": "Mohammed Al-Rashid",
+        "company": "Premium Care Products"
+      },
+      "testimonial3": {
+        "quote": "Working with NASK has been transformative. Their patented technology and technical support are unmatched in the industry.",
+        "author": "Lisa Anderson",
+        "company": "MedTech Innovations"
+      }
+    },
+    "team": {
+      "title": "Meet Our Leadership",
+      "subtitle": "Experts in material science and nanofiber technology",
+      "member1": {
+        "name": "Dr. James Wong",
+        "role": "Chief Technology Officer",
+        "bio": "Leading nanofiber research with 20+ years in advanced materials science"
+      },
+      "member2": {
+        "name": "Dr. Maria Santos",
+        "role": "Director of R&D",
+        "bio": "Pioneering electrospinning processes and quality control systems"
+      },
+      "member3": {
+        "name": "David Kim",
+        "role": "VP of Manufacturing",
+        "bio": "Scaling production capabilities across global facilities"
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know about NASK nanofiber technology",
+      "question1": "What makes NASK nanofiber technology different?",
+      "answer1": "NASK's patented electrospinning process creates ultra-fine fibers with superior fluid management, breathability, and antimicrobial properties. Our technology is internationally patented across China, USA, Japan, Europe, and Hong Kong.",
+      "question2": "How does the antibacterial functionality work?",
+      "answer2": "Our nanofibers are engineered with antimicrobial properties that achieve >99% bacterial kill rate, as validated by AATCC 100-2019 testing. The technology provides long-lasting protection without compromising breathability.",
+      "question3": "Can NASK technology be integrated into existing production lines?",
+      "answer3": "Yes, our nanofiber layers are designed as ready-to-apply functional materials that can be easily integrated into existing manufacturing processes with minimal modifications.",
+      "question4": "What certifications does NASK technology have?",
+      "answer4": "Our products meet international standards including GB/T 28004-2021 for diaper performance, GB 15979-2002 for skin safety, and have passed dermatological testing by SGS for sensitive skin compatibility.",
+      "question5": "How can I request samples or technical specifications?",
+      "answer5": "Contact our team directly via email at monzer@sarabeelmedical.com or raghad@sarabeelmedical.com, or call +966 56 808 1744. We'll provide samples and detailed technical documentation."
+    },
     "contact": {
       "title": "Get in Touch",
       "subtitle": "Ready to elevate your products with NASK nanofiber technology?",
