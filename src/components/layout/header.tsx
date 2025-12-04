@@ -58,7 +58,15 @@ export default function Header() {
             transition={{ delay: 0.2, duration: 0.5 }}
             className="flex h-full items-center gap-3"
           >
-            <Logo />
+            {/* Mobile logo - always colored */}
+            <Logo src="/images/logos/3.png" className="lg:hidden" />
+            {/* Desktop logo - switches based on scroll */}
+            <Logo
+              src={
+                isScrolled ? "/images/logos/3.png" : "/images/logos/3-white.png"
+              }
+              className="hidden lg:block"
+            />
           </m.div>
 
           {/* Desktop Navigation */}
@@ -74,6 +82,7 @@ export default function Header() {
                   href={item.href}
                   className={cn(
                     "group relative px-4 py-2 text-base font-medium transition-all duration-300",
+                    isScrolled ? "text-foreground" : "text-white",
                     "hover:text-primary",
                     "before:absolute before:bottom-0 before:left-1/2 before:h-0.5 before:w-0 rtl:before:right-1/2",
                     "before:from-primary before:to-primary/60 before:bg-linear-to-r",

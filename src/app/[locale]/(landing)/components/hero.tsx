@@ -7,61 +7,68 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import { siteConfig } from "@/config/site";
+
 export default function Hero() {
   const t = useTranslations("IndexPage.hero");
   const pathname = usePathname();
   const locale = pathname.split("/")[1];
 
   return (
-    <section className="bg-linear-to-br relative flex min-h-screen items-center justify-center overflow-hidden from-gray-50 via-white to-orange-50 lg:h-screen lg:min-h-[950px] xl:h-[1080px]">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
+    <section className="relative flex min-h-[700px] items-center overflow-hidden sm:min-h-[600px] lg:min-h-screen">
+      {/* Hero Background Image */}
+      <div className="absolute inset-0">
         <ExportedImage
-          src="/images/hero-bg.jpeg"
-          alt=""
+          src="/images/hero.jpeg"
+          alt="Nanofiber Technology"
           fill
           className="object-cover"
           priority={true}
         />
+        {/* Dark Overlay for better text readability */}
+        <div className="bg-linear-to-r absolute inset-0 from-gray-900/95 via-gray-900/85 to-gray-900/70"></div>
+        <div className="bg-linear-to-b absolute inset-0 from-transparent via-transparent to-gray-900/50"></div>
       </div>
 
-      {/* Animated Background Elements */}
+      {/* Animated Accent Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="animate-blob bg-primary absolute end-10 top-20 h-96 w-96 rounded-full opacity-10 mix-blend-multiply blur-3xl filter"></div>
-        <div className="animate-blob animation-delay-2000 bg-secondary absolute start-10 top-40 h-96 w-96 rounded-full opacity-10 mix-blend-multiply blur-3xl filter"></div>
-        <div className="animate-blob animation-delay-4000 bg-primary absolute -bottom-8 start-1/2 h-96 w-96 rounded-full opacity-10 mix-blend-multiply blur-3xl filter"></div>
+        <div className="animate-blob bg-primary/20 absolute end-20 top-20 h-96 w-96 rounded-full opacity-30 mix-blend-screen blur-3xl filter"></div>
+        <div className="animation-delay-2000 animate-blob bg-secondary/20 absolute start-20 top-40 h-96 w-96 rounded-full opacity-30 mix-blend-screen blur-3xl filter"></div>
+        <div className="animation-delay-4000 animate-blob bg-accent/20 absolute bottom-20 end-40 h-96 w-96 rounded-full opacity-30 mix-blend-screen blur-3xl filter"></div>
       </div>
 
-      <div className="relative z-10 mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-4 py-20 pt-24 sm:px-6 lg:grid-cols-2 lg:px-8 lg:pt-28">
-        {/* Left Content */}
-        <div className="text-center lg:text-start">
+      {/* Grid Pattern Overlay */}
+      <div className="bg-size-[40px_40px] absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)]"></div>
+
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 py-24 pt-40 sm:px-6 lg:px-8">
+        <div className="max-w-3xl">
           {/* Badge */}
           <m.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="bg-linear-to-r from-primary/10 to-secondary/10 text-secondary mb-6 inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold"
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            className="border-primary/30 bg-primary/10 mb-6 inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-semibold text-white backdrop-blur-md"
           >
-            <Sparkles size={16} />
-            {t("badge")}
+            <Sparkles size={14} className="text-primary animate-pulse" />
+            <span>{t("badge")}</span>
           </m.div>
 
           {/* Main Title */}
           <m.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.1 }}
-            className="mb-4 text-5xl font-bold leading-tight text-gray-900 md:text-6xl lg:text-7xl"
+            transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
+            className="mb-4 text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl"
           >
             {t("title")}
           </m.h1>
 
-          {/* Subtitle */}
+          {/* Subtitle with Gradient */}
           <m.h2
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="bg-linear-to-r from-primary to-secondary mb-6 bg-clip-text text-3xl font-bold text-transparent md:text-4xl"
+            transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+            className="from-primary via-secondary to-accent bg-linear-to-r mb-6 bg-clip-text text-2xl font-bold text-transparent md:text-3xl lg:text-4xl"
           >
             {t("subtitle")}
           </m.h2>
@@ -70,8 +77,8 @@ export default function Hero() {
           <m.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="mb-8 text-lg leading-relaxed text-gray-600 md:text-xl"
+            transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
+            className="mb-8 text-base leading-relaxed text-gray-300 md:text-lg"
           >
             {t("description")}
           </m.p>
@@ -80,79 +87,33 @@ export default function Hero() {
           <m.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="flex flex-col items-center justify-center gap-4 sm:flex-row lg:justify-start"
+            transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
+            className="flex flex-wrap items-center gap-4"
           >
             <Link
               href={`/${locale}#technology`}
-              className="bg-linear-to-r from-primary to-accent group flex items-center gap-2 rounded-lg px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+              className="from-primary to-secondary shadow-primary/40 hover:shadow-primary/60 bg-linear-to-r group relative flex items-center gap-2 overflow-hidden rounded-lg px-7 py-3.5 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105"
             >
-              {t("exploreBtn")}
-              <ArrowRight
-                size={20}
-                className="transition-transform group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1"
-              />
+              <span className="relative z-10 flex items-center gap-2">
+                {t("exploreBtn")}
+                <ArrowRight
+                  size={18}
+                  className="transition-transform group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1"
+                />
+              </span>
+              <div className="from-secondary to-primary bg-linear-to-r absolute inset-0 z-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
             </Link>
             <Link
-              href={`/${locale}#contact`}
-              className="border-secondary text-secondary hover:bg-secondary rounded-lg border-2 px-8 py-4 font-semibold transition-all duration-300 hover:text-white"
+              href={siteConfig.links.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group rounded-lg border-2 border-white/30 bg-white/10 px-7 py-3.5 font-semibold text-white backdrop-blur-md transition-all duration-300 hover:border-white/50 hover:bg-white/20"
             >
               {t("sampleBtn")}
             </Link>
           </m.div>
         </div>
-
-        {/* Right Image */}
-        <m.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.5 }}
-          className="relative"
-        >
-          <div className="relative overflow-hidden rounded-2xl shadow-2xl">
-            <ExportedImage
-              src="/images/hero.jpeg"
-              alt="Nanofiber Technology"
-              className="h-full w-full object-cover"
-              width={800}
-              height={600}
-            />
-            <div className="bg-linear-to-tr from-primary/20 to-secondary/20 absolute inset-0"></div>
-          </div>
-
-          {/* Floating Stats */}
-          <m.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-            className="absolute -start-4 top-1/4 rounded-xl bg-white p-4 shadow-xl"
-          >
-            <div className="text-primary text-3xl font-bold">&gt;99%</div>
-            <div className="text-sm text-gray-600">{t("antibacterial")}</div>
-          </m.div>
-
-          <m.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 1 }}
-            className="absolute -end-4 bottom-1/4 rounded-xl bg-white p-4 shadow-xl"
-          >
-            <div className="text-secondary text-3xl font-bold">5+</div>
-            <div className="text-sm text-gray-600">{t("globalPatents")}</div>
-          </m.div>
-        </m.div>
       </div>
-
-      {/* Scroll Indicator */}
-      <m.div
-        animate={{ y: [0, 10, 0] }}
-        transition={{ duration: 2, repeat: Infinity }}
-        className="absolute bottom-8 start-1/2 -translate-x-1/2 transform"
-      >
-        <div className="border-primary flex h-10 w-6 justify-center rounded-full border-2">
-          <div className="bg-primary mt-2 h-2 w-1 rounded-full"></div>
-        </div>
-      </m.div>
     </section>
   );
 }
