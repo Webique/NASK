@@ -117,7 +117,7 @@ export default function Hero() {
             className="absolute -start-4 top-1/4 rounded-xl bg-white p-4 shadow-xl"
           >
             <div className="text-primary text-3xl font-bold">&gt;99%</div>
-            <div className="text-sm text-gray-600">{ t("antibacterial")}</div>
+            <div className="text-sm text-gray-600">{t("antibacterial")}</div>
           </m.div>
 
           <m.div
@@ -127,7 +127,7 @@ export default function Hero() {
             className="absolute -end-4 bottom-1/4 rounded-xl bg-white p-4 shadow-xl"
           >
             <div className="text-secondary text-3xl font-bold">5+</div>
-            <div className="text-sm text-gray-600">{ t("globalPatents")}</div>
+            <div className="text-sm text-gray-600">{t("globalPatents")}</div>
           </m.div>
         </m.div>
       </div>

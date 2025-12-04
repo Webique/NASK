@@ -1,6 +1,6 @@
-# Basmet el Nezam
+# Nask
 
-This is the source code for the official website of Basmet el Nezam.
+This is the source code for the official website of Nask.
 
 This is a [Next.js](https://nextjs.org) project with internationalization support (Arabic/English).
 
