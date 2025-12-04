@@ -12,7 +12,7 @@ export default function CTA() {
   const locale = pathname.split("/")[1];
 
   return (
-    <section className="relative overflow-hidden bg-linear-to-br from-gray-50 via-white to-orange-50/30 py-20">
+    <section className="bg-linear-to-br relative overflow-hidden from-gray-50 via-white to-orange-50/30 py-20">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1920&q=80')] bg-cover bg-center opacity-5"></div>
 
@@ -22,7 +22,7 @@ export default function CTA() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true, margin: "-100px" }}
-          className="relative overflow-hidden rounded-3xl bg-linear-to-r from-primary to-secondary p-12 text-center shadow-2xl md:p-16"
+          className="bg-linear-to-r from-primary to-secondary relative overflow-hidden rounded-3xl p-12 text-center shadow-2xl md:p-16"
         >
           {/* Background Pattern Overlay */}
           <div className="absolute inset-0 opacity-10">
@@ -50,7 +50,7 @@ export default function CTA() {
                 className="flex items-center justify-center gap-2 text-white"
               >
                 <Award className="h-6 w-6" />
-                <span className="font-semibold">{ t("feature1")}</span>
+                <span className="font-semibold">{t("feature1")}</span>
               </m.div>
               <m.div
                 initial={{ opacity: 0, y: 20 }}
@@ -60,7 +60,7 @@ export default function CTA() {
                 className="flex items-center justify-center gap-2 text-white"
               >
                 <Zap className="h-6 w-6" />
-                <span className="font-semibold">{ t("feature2")}</span>
+                <span className="font-semibold">{t("feature2")}</span>
               </m.div>
               <m.div
                 initial={{ opacity: 0, y: 20 }}
@@ -70,14 +70,14 @@ export default function CTA() {
                 className="flex items-center justify-center gap-2 text-white"
               >
                 <CheckCircle2 className="h-6 w-6" />
-                <span className="font-semibold">{ t("feature3")}</span>
+                <span className="font-semibold">{t("feature3")}</span>
               </m.div>
             </div>
 
             {/* CTA Button */}
             <Link
               href={`/${locale}#contact`}
-              className="group inline-flex items-center gap-2 rounded-lg bg-white px-8 py-4 font-semibold text-secondary shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              className="text-secondary group inline-flex items-center gap-2 rounded-lg bg-white px-8 py-4 font-semibold shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl"
             >
               {t("contactBtn")}
               <ArrowRight

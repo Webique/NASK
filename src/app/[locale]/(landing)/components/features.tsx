@@ -2,6 +2,7 @@
 
 import { Download, Sparkles } from "lucide-react";
 import * as m from "motion/react-m";
+import ExportedImage from "next-image-export-optimizer";
 import { useTranslations } from "next-intl";
 
 export default function Features() {
@@ -52,10 +53,12 @@ export default function Features() {
           viewport={{ once: true }}
           className="mb-12 overflow-hidden rounded-2xl shadow-2xl"
         >
-          <img
+          <ExportedImage
             src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=1200&q=80"
             alt={t("imageAlt")}
             className="h-80 w-full object-cover"
+            width={1200}
+            height={320}
           />
         </m.div>
 

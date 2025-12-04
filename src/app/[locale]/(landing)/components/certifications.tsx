@@ -16,7 +16,7 @@ export default function Certifications() {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-linear-to-br from-gray-50 via-white to-orange-50/30 py-20">
+    <section className="bg-linear-to-br relative overflow-hidden from-gray-50 via-white to-orange-50/30 py-20">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNENTQyNEYiIGZpbGwtb3BhY2l0eT0iMC40Ij48cGF0aCBkPSJNMzYgMzRjMC0yLjIxLTEuNzktNC00LTRzLTQgMS43OS00IDQgMS43OSA0IDQgNCA0LTEuNzkgNC00em0wLTEwYzAtMi4yMS0xLjc5LTQtNC00cy00IDEuNzktNCA0IDEuNzkgNCA0IDQgNC0xLjc5IDQtNHptMC0xMGMwLTIuMjEtMS43OS00LTQtNHMtNCAxLjc5LTQgNCAxLjc5IDQgNCA0IDQtMS43OSA0LTR6Ii8+PC9nPjwvZz48L3N2Zz4=')] bg-repeat"></div>
@@ -50,12 +50,12 @@ export default function Certifications() {
                 className="group relative overflow-hidden rounded-xl bg-white p-6 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
               >
                 {/* Gradient Border on Hover */}
-                <div className="absolute inset-0 rounded-xl bg-linear-to-r from-primary to-secondary opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+                <div className="bg-linear-to-r from-primary to-secondary absolute inset-0 rounded-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
                 <div className="absolute inset-[2px] rounded-xl bg-white"></div>
 
                 {/* Content */}
                 <div className="relative z-10 flex items-start gap-3">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-linear-to-br from-primary to-secondary shadow-md transition-transform duration-300 group-hover:scale-110">
+                  <div className="bg-linear-to-br from-primary to-secondary flex h-10 w-10 shrink-0 items-center justify-center rounded-lg shadow-md transition-transform duration-300 group-hover:scale-110">
                     <Icon className="h-5 w-5 text-white" />
                   </div>
                   <p className="font-medium text-gray-700">{cert.text}</p>
@@ -71,7 +71,7 @@ export default function Certifications() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
           viewport={{ once: true, margin: "-100px" }}
-          className="relative overflow-hidden rounded-2xl bg-linear-to-r from-primary to-secondary p-8 text-center shadow-2xl md:p-12"
+          className="bg-linear-to-r from-primary to-secondary relative overflow-hidden rounded-2xl p-8 text-center shadow-2xl md:p-12"
         >
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-10">

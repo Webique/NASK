@@ -2,6 +2,7 @@
 
 import { ArrowRight, Sparkles } from "lucide-react";
 import * as m from "motion/react-m";
+import ExportedImage from "next-image-export-optimizer";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -101,10 +102,12 @@ export default function Hero() {
           className="relative"
         >
           <div className="relative overflow-hidden rounded-2xl shadow-2xl">
-            <img
+            <ExportedImage
               src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=800&q=80"
               alt="Nanofiber Technology"
               className="h-full w-full object-cover"
+              width={800}
+              height={600}
             />
             <div className="bg-linear-to-tr from-primary/20 to-secondary/20 absolute inset-0"></div>
           </div>

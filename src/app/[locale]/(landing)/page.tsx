@@ -4,16 +4,17 @@ import type { Locale } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { use } from "react";
 
-import About from "@/components/landing/about";
-import Certifications from "@/components/landing/certifications";
-import Contact from "@/components/landing/contact";
-import CTA from "@/components/landing/cta";
-import Features from "@/components/landing/features";
-import Hero from "@/components/landing/hero";
-import Mission from "@/components/landing/mission";
-import Validation from "@/components/landing/validation";
-import Values from "@/components/landing/values";
 import WhatsAppFloat from "@/components/whatsapp-float";
+
+import About from "./components/about";
+import Certifications from "./components/certifications";
+import Contact from "./components/contact";
+import CTA from "./components/cta";
+import Features from "./components/features";
+import Hero from "./components/hero";
+import Mission from "./components/mission";
+import Validation from "./components/validation";
+import Values from "./components/values";
 
 export default function IndexPage({ params }: PageProps) {
   const { locale } = use(params);

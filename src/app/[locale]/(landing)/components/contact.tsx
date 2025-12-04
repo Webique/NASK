@@ -2,6 +2,7 @@
 
 import { Mail, MapPin, Phone } from "lucide-react";
 import * as m from "motion/react-m";
+import ExportedImage from "next-image-export-optimizer";
 import { useTranslations } from "next-intl";
 
 export default function Contact() {
@@ -104,10 +105,12 @@ export default function Contact() {
             viewport={{ once: true }}
             className="relative overflow-hidden rounded-2xl shadow-2xl"
           >
-            <img
+            <ExportedImage
               src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&q=80"
               alt={t("imageAlt")}
               className="h-full w-full object-cover"
+              width={800}
+              height={600}
             />
             <div className="bg-linear-to-t absolute inset-0 from-black/60 via-black/20 to-transparent"></div>
             <div className="absolute bottom-8 left-8 right-8 text-white">

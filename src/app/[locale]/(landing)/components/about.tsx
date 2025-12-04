@@ -2,6 +2,7 @@
 
 import { Award, CheckCircle2, Globe } from "lucide-react";
 import * as m from "motion/react-m";
+import ExportedImage from "next-image-export-optimizer";
 import { useTranslations } from "next-intl";
 
 export default function About() {
@@ -61,10 +62,12 @@ export default function About() {
           >
             {/* Technology Image */}
             <div className="relative overflow-hidden rounded-2xl shadow-xl">
-              <img
+              <ExportedImage
                 src="https://images.unsplash.com/photo-1532187643603-ba119ca4109e?w=800&q=80"
                 alt="Nanofiber Technology"
                 className="h-64 w-full object-cover"
+                width={800}
+                height={256}
               />
               <div className="bg-linear-to-t absolute inset-0 from-black/50 to-transparent"></div>
               <div className="absolute bottom-4 start-4 text-white">
@@ -115,10 +118,12 @@ export default function About() {
           >
             {/* Manufacturing Image */}
             <div className="relative overflow-hidden rounded-2xl shadow-xl">
-              <img
+              <ExportedImage
                 src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80"
                 alt="Manufacturing Process"
                 className="h-64 w-full object-cover"
+                width={800}
+                height={256}
               />
               <div className="bg-linear-to-t absolute inset-0 from-black/50 to-transparent"></div>
               <div className="absolute bottom-4 start-4 text-white">
