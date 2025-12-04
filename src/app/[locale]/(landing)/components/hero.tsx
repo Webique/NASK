@@ -13,7 +13,7 @@ export default function Hero() {
   const locale = pathname.split("/")[1];
 
   return (
-    <section className="bg-linear-to-br relative flex min-h-screen items-center justify-center overflow-hidden from-gray-50 via-white to-orange-50">
+    <section className="bg-linear-to-br relative flex min-h-screen items-center justify-center overflow-hidden from-gray-50 via-white to-orange-50 lg:h-screen lg:min-h-[950px] xl:h-[1080px]">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <ExportedImage
@@ -32,7 +32,7 @@ export default function Hero() {
         <div className="animate-blob animation-delay-4000 bg-primary absolute -bottom-8 start-1/2 h-96 w-96 rounded-full opacity-10 mix-blend-multiply blur-3xl filter"></div>
       </div>
 
-      <div className="relative z-10 mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:px-8">
+      <div className="relative z-10 mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-4 py-20 pt-24 sm:px-6 lg:grid-cols-2 lg:px-8 lg:pt-28">
         {/* Left Content */}
         <div className="text-center lg:text-start">
           {/* Badge */}

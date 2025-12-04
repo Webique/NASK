@@ -39,10 +39,10 @@ export default function Header() {
   return (
     <header
       className={cn(
-        "bg-background/98 border-border/50 fixed inset-x-0 top-0 z-50 border-b shadow-lg shadow-black/5 backdrop-blur-2xl transition-all duration-500 lg:border-none",
+        "bg-background/98 border-border/50 fixed inset-x-0 top-0 z-50 border-b shadow-lg shadow-black/5 transition-all duration-500 lg:border-none",
         isScrolled
           ? "lg:bg-background/90 lg:border-border/50 lg:border-b lg:shadow-xl lg:shadow-black/10 lg:backdrop-blur-2xl"
-          : "lg:bg-transparent lg:shadow-none lg:backdrop-blur-md"
+          : "lg:bg-transparent lg:shadow-none"
       )}
     >
       {/* Elegant top accent line */}
@@ -50,7 +50,7 @@ export default function Header() {
 
       {/* Main Header */}
       <div className="container mx-auto px-4">
-        <div className="flex h-20 items-center justify-between lg:h-24">
+        <div className="flex h-16 items-center justify-between lg:h-24">
           {/* Logo */}
           <m.div
             initial={{ opacity: 0, x: -20 }}
@@ -73,7 +73,7 @@ export default function Header() {
                 <Link
                   href={item.href}
                   className={cn(
-                    "group relative px-4 py-2 text-base font-medium text-white transition-all duration-300",
+                    "group relative px-4 py-2 text-base font-medium transition-all duration-300",
                     "hover:text-primary",
                     "before:absolute before:bottom-0 before:left-1/2 before:h-0.5 before:w-0 rtl:before:right-1/2",
                     "before:from-primary before:to-primary/60 before:bg-linear-to-r",
