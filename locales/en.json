@@ -1,0 +1,84 @@
+{
+  "IndexPage": {
+    "hero": {
+
+    }
+  },
+  "Error": {
+    "title": "Sorry, an unexpected error occurred!",
+    "description": "<p>We apologize for this error we encountered.</p><p>You can try <retry>reloading the page</retry> you were visiting.</p>"
+  },
+  "NotFoundPage": {
+    "title": "Page not found",
+    "description": "Sorry, please check the address bar in your browser or use the navigation to go to a known page.",
+    "retryButton": "Try again",
+    "contactSupport": "Contact support",
+    "goBack": "Go back",
+    "backToHome": "Back to home"
+  },
+  "LocaleLayout": {
+    "name": "Basmet Al-Nezam Law Firm | Professional Legal Services",
+    "short_name": "Basmet Al-Nezam",
+    "description": "Leading law firm in Saudi Arabia providing comprehensive legal services including corporate law, litigation, arbitration, and legal consultancy.",
+    "keywords": [
+      "Basmet Al-Nezam",
+      "Law Firm",
+      "Legal Services",
+      "Saudi Arabia",
+      "Corporate Law",
+      "Litigation",
+      "Arbitration",
+      "Legal Consultancy"
+    ]
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, ar {🇸🇦 Arabic} en {🇺🇸 English} other {Unknown}}"
+  },
+  "Header": {
+    "nav": {
+      "home": "Home",
+      "about": "About Us",
+      "services": "Services",
+      "myservices": "Our Services",
+      "myportfolio": "Our Work",
+      "contactme": "Contact Us"
+    },
+    "cta": "Consult Now",
+    "siteName": "Basmet Al-Nezam",
+    "siteDescription": "Law Firm"
+  },
+  "Footer": {
+    "home": "Home",
+    "about": "About Us",
+    "myservices": "Our Services",
+    "services": "Services",
+    "myportfolio": "Our Work",
+    "contactme": "Contact Us",
+    "quickLinks": "Quick Links",
+    "contactUs": "Contact",
+    "connectWithMe": "Connect With Us",
+    "phone": "Phone",
+    "email": "Email",
+    "location": "Location",
+    "copyright": "© {year} Basmet Al-Nezam Law Firm. All rights reserved",
+    "companyDescription": "Leading law firm providing comprehensive legal services with expertise, integrity, and commitment to excellence.",
+    "marketing": "Corporate Law",
+    "development": "Litigation",
+    "consulting": "Legal Consultation",
+    "saudiArabia": "Al-Wasita District - Opposite the General Court",
+    "available24_7": "Available 24/7",
+    "followMe":"Follow Us",
+    "socialMedia": {
+      "instagram": "Instagram",
+      "snapchat": "Snapchat",
+      "x": "X",
+      "tiktok": "TikTok",
+      "linkedin": "LinkedIn",
+      "email": "Email",
+      "whatsapp": "WhatsApp"
+    },
+    "gacaCertified": "Licensed Law Firm",
+    "certificateNumber": "License No. 12345"
+  }
+}
