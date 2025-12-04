@@ -48,9 +48,11 @@ export default function Contact() {
         />
       </div>
 
-      {/* Decorative Blobs */}
-      <div className="bg-primary/5 absolute left-0 top-1/3 h-96 w-96 rounded-full blur-3xl" />
-      <div className="bg-secondary/5 absolute bottom-1/3 right-0 h-96 w-96 rounded-full blur-3xl" />
+      {/* Animated Accent Elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="animate-blob bg-primary/10 absolute left-0 top-1/3 h-96 w-96 rounded-full opacity-50 mix-blend-multiply blur-3xl filter"></div>
+        <div className="animation-delay-2000 animate-blob bg-secondary/10 absolute bottom-1/3 right-0 h-96 w-96 rounded-full opacity-50 mix-blend-multiply blur-3xl filter"></div>
+      </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <m.div

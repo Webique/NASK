@@ -33,6 +33,12 @@ export default function Features() {
         />
       </div>
 
+      {/* Animated Accent Elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="animate-blob bg-primary/10 absolute start-1/4 top-20 h-96 w-96 rounded-full opacity-50 mix-blend-multiply blur-3xl filter"></div>
+        <div className="animation-delay-4000 animate-blob bg-secondary/10 absolute bottom-20 end-1/4 h-96 w-96 rounded-full opacity-50 mix-blend-multiply blur-3xl filter"></div>
+      </div>
+
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <m.div
           initial={{ opacity: 0, y: 20 }}
@@ -102,7 +108,7 @@ export default function Features() {
           viewport={{ once: true, margin: "-100px" }}
           className="text-center"
         >
-          <button className="bg-linear-to-r from-primary to-secondary group inline-flex items-center gap-2 rounded-lg px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
+          <button className="bg-linear-to-r from-primary to-secondary ring-primary/20 hover:shadow-primary/40 group inline-flex items-center gap-2 rounded-full px-8 py-4 font-semibold text-white shadow-lg ring-2 transition-all duration-300 hover:scale-105 hover:shadow-xl">
             <Download
               size={20}
               className="transition-transform group-hover:translate-y-1"
