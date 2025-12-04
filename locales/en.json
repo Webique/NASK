@@ -2,6 +2,9 @@
   "IndexPage": {
     "hero": {
 
+    },
+    "WhatsAppFloat": {
+      "tooltip": "Contact us via WhatsApp"
     }
   },
   "Error": {
