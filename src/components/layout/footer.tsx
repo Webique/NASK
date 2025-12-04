@@ -4,10 +4,6 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import * as m from "motion/react-m";
 import { useTranslations } from "next-intl";
 
-import Instagram from "@/assets/icons/instagram.svg";
-import Snapchat from "@/assets/icons/snapchat.svg";
-import Tiktok from "@/assets/icons/tiktok.svg";
-import X from "@/assets/icons/x.svg";
 import Logo from "@/components/ui/logo";
 import { siteConfig } from "@/config/site";
 
@@ -28,31 +24,8 @@ const Footer = () => {
     { label: t("consulting"), href: "#services" }
   ];
 
-  const socialLinks = [
-    {
-      icon: Instagram,
-      href: siteConfig.links.instagram,
-      label: t("socialMedia.instagram")
-    },
-    {
-      icon: Tiktok,
-      href: siteConfig.links.tiktok,
-      label: t("socialMedia.tiktok")
-    },
-    {
-      icon: Snapchat,
-      href: siteConfig.links.snapchat,
-      label: t("socialMedia.snapchat")
-    },
-    {
-      icon: X,
-      href: siteConfig.links.x,
-      label: t("socialMedia.x")
-    }
-  ];
-
   return (
-    <footer className="bg-secondary text-secondary-foreground border-border/50 relative border-t">
+    <footer className="border-border/50 relative border-t bg-[#1A1F26] text-gray-100">
       {/* Elegant decorative top accent */}
       <div className="via-primary/40 bg-linear-to-r absolute start-0 top-0 h-[2px] w-full from-transparent to-transparent" />
 
@@ -73,44 +46,14 @@ const Footer = () => {
             className="lg:col-span-4"
           >
             <Logo
-              imgClassName="w-28 lg:w-32"
-              className="mb-6"
-              width={333}
-              height={197}
-              src="/images/logos/1.png"
+              imgClassName="w-44 lg:w-52 brightness-0 invert"
+              className="mb-8"
+              width={240}
+              height={45}
             />
-            <p className="text-secondary-foreground/80 mb-8 max-w-sm text-base leading-relaxed">
+            <p className="mb-8 max-w-sm text-base leading-relaxed text-gray-400">
               {t("companyDescription")}
             </p>
-
-            {/* Social Links */}
-            <div className="space-y-4">
-              <h4 className="text-sm font-bold uppercase tracking-wider text-white">
-                {t("followMe")}
-              </h4>
-              <div className="flex gap-3">
-                {socialLinks.map((social, index) => {
-                  const Icon = social.icon;
-                  return (
-                    <m.a
-                      key={social.label}
-                      href={social.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-secondary-foreground/80 hover:text-primary bg-secondary-foreground/10 hover:bg-primary/20 hover:ring-primary/30 group relative flex h-12 w-12 items-center justify-center rounded-xl ring-1 ring-white/10 transition-all"
-                      aria-label={social.label}
-                      whileHover={{ y: -3, scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                    >
-                      <Icon
-                        className={`h-5 w-5 ${index === 1 ? "fill-current" : "text-current"} transition-transform group-hover:scale-110`}
-                      />
-                      <div className="from-primary/10 bg-linear-to-br absolute inset-0 rounded-xl to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
-                    </m.a>
-                  );
-                })}
-              </div>
-            </div>
           </m.div>
 
           {/* Quick Links */}

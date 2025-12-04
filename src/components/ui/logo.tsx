@@ -14,8 +14,8 @@ type indexProps = {
 
 export default function Logo({
   src = "/images/logos/3.png",
-  width = 192,
-  height = 148,
+  width = 180,
+  height = 41,
   className,
   imgClassName,
   href = "/"
