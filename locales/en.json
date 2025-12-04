@@ -225,7 +225,7 @@
     "home": "Home",
     "about": "About Technology",
     "myservices": "Features",
-    "services": "Services",
+    "services": "Solutions",
     "myportfolio": "Applications",
     "contactme": "Contact Us",
     "quickLinks": "Quick Links",
@@ -246,7 +246,8 @@
     "marketing": "Medical Products",
     "development": "Hygiene Solutions",
     "consulting": "Technical Support",
-    "saudiArabia": "Global Manufacturing",
+    "saudiArabia": "Saudi Arabia",
+    "globalReach": "Global Reach",
     "available24_7": "Available 24/7",
     "followMe": "Follow Us",
     "socialMedia": {
@@ -256,7 +257,7 @@
       "email": "Email",
       "whatsapp": "WhatsApp"
     },
-    "gacaCertified": "Internationally Patented",
+    "gacaCertified": "Internationally Patented Technology",
     "certificateNumber": "China, USA, Japan, Europe, Hong Kong"
   }
 }

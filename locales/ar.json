@@ -226,9 +226,10 @@
     "about": "عن التكنولوجيا",
     "myservices": "المميزات",
     "myportfolio": "التطبيقات",
-    "services": "الخدمات",
+    "services": "الحلول",
     "contactme": "تواصل معنا",
     "quickLinks": "الروابط السريعة",
+    "contactUs": "تواصل معنا",
     "connectWithMe": "تواصل معنا",
     "phone": "الهاتف",
     "email": "البريد الإلكتروني",
@@ -245,7 +246,8 @@
     "marketing": "منتجات طبية",
     "development": "حلول النظافة",
     "consulting": "الدعم الفني",
-    "saudiArabia": "تصنيع عالمي",
+    "saudiArabia": "المملكة العربية السعودية",
+    "globalReach": "انتشار عالمي",
     "available24_7": "متاح على مدار الساعة",
     "followMe": "تابعنا على",
     "socialMedia": {
@@ -255,7 +257,7 @@
       "email": "البريد الإلكتروني",
       "whatsapp": "واتساب"
     },
-    "gacaCertified": "محمية ببراءة اختراع دولية",
+    "gacaCertified": "تكنولوجيا محمية ببراءة اختراع دولية",
     "certificateNumber": "الصين، الولايات المتحدة، اليابان، أوروبا، هونج كونج"
   }
 }
