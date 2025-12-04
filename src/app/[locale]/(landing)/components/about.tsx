@@ -31,7 +31,7 @@ export default function About() {
       {/* Animated Accent Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="animate-blob bg-primary/10 absolute end-20 top-20 h-96 w-96 rounded-full opacity-50 mix-blend-multiply blur-3xl filter"></div>
-        <div className="animation-delay-2000 animate-blob bg-secondary/10 absolute start-20 bottom-20 h-96 w-96 rounded-full opacity-50 mix-blend-multiply blur-3xl filter"></div>
+        <div className="animation-delay-2000 animate-blob bg-secondary/10 absolute bottom-20 start-20 h-96 w-96 rounded-full opacity-50 mix-blend-multiply blur-3xl filter"></div>
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
