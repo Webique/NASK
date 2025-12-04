@@ -55,7 +55,7 @@ export default function Certifications() {
                 <div className="absolute inset-[2px] rounded-xl bg-white"></div>
 
                 {/* Content */}
-                <div className="relative z-10 flex items-start gap-3">
+                <div className="relative z-10 flex items-center gap-3">
                   <div className="bg-linear-to-br from-primary to-secondary flex h-10 w-10 shrink-0 items-center justify-center rounded-lg shadow-md transition-transform duration-300 group-hover:scale-110">
                     <Icon className="h-5 w-5 text-white" />
                   </div>
