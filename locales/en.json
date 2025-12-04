@@ -1,7 +1,105 @@
 {
   "IndexPage": {
     "hero": {
-
+      "title": "Nanofiber Technology is the Future",
+      "subtitle": "We Invented the Advantage",
+      "description": "Our internationally patented technology leads the next generation of high-performance hygiene and medical materials.",
+      "exploreBtn": "Explore Our Technology",
+      "sampleBtn": "Request a Sample",
+      "badge": "Internationally Patented Technology",
+      "antibacterial": "Antibacterial",
+      "globalPatents": "Global Patents"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "We are committed to enriching the body, mind and soul of all mankind through the development of high quality medical devices and personal health care products."
+    },
+    "values": {
+      "title": "At NASK",
+      "subtitle": "We have strong belief in 3 core values",
+      "value1": {
+        "title": "Customer Excellence",
+        "description": "Serve our customers and meet market demands with innovative and high quality products and services through continuous improvement"
+      },
+      "value2": {
+        "title": "Brand Leadership",
+        "description": "Strive for excellence in our products and services so that our brand becomes the first choice of customers"
+      },
+      "value3": {
+        "title": "Global Standards",
+        "description": "Ensure our products will fully comply with international safety and quality standards and contribute to the wellness of all mankind, the environment and the society"
+      }
+    },
+    "about": {
+      "title": "About NASK Nanofiber Technology",
+      "description": "NASK's patented nanofiber technology represents a breakthrough in advanced material science, delivering a new generation of high-performance nonwoven solutions. Our nanofiber-enhanced substrates are engineered to surpass traditional materials by providing superior fluid management, exceptional breathability, enhanced antimicrobial functionality, and reliable long-term stability across diverse applications.",
+      "applications": "Used in diapers, sanitary pads, medical respirators, and functional textiles, NASK nanofibers are produced using precise electrospinning processes developed and patented across China, the United States, Japan, Europe, and Hong Kong.",
+      "advancedMaterialScience": "Advanced Material Science",
+      "globalManufacturing": "Global Manufacturing",
+      "keyAdvantages": "Key Advantages",
+      "globalPatents": "Global Patents",
+      "advantage1": "Superior fluid management",
+      "advantage2": "Exceptional breathability",
+      "advantage3": "Enhanced antimicrobial functionality",
+      "advantage4": "Long-term stability",
+      "country1": "China",
+      "country2": "United States",
+      "country3": "Japan",
+      "country4": "Europe",
+      "country5": "Hong Kong"
+    },
+    "validation": {
+      "title": "Scientific & Laboratory Validation",
+      "subtitle": "All nanofiber top sheets have undergone testing by accredited laboratories",
+      "test1": "AATCC 100-2019 → >99% antibacterial kill rate",
+      "test2": "GB/T 28004-2021 → Passed all diaper performance requirements",
+      "test3": "Dermatological Testing (SGS) → Safe for sensitive skin",
+      "test4": "No skin allergy (GB 15979-2002)",
+      "certifiedBy": "Certified by International Accredited Laboratories"
+    },
+    "certifications": {
+      "title": "Certifications",
+      "subtitle": "NASK nanofiber technology enhances materials used in:",
+      "cert1": "Medical and healthcare products",
+      "cert2": "Filtration and environmental protection",
+      "cert3": "Personal care and hygiene",
+      "cert4": "Functional textiles",
+      "cert5": "Advanced technical materials",
+      "versatility": "Its versatility allows manufacturers to upgrade existing products or develop entirely new performance categories using our ready-to-apply nanofiber functional layers."
+    },
+    "features": {
+      "title": "Premium Features Empowered by NASK Nanofiber Top Sheet",
+      "subtitle": "In Diapers",
+      "badge": "Premium Technology",
+      "imageAlt": "NASK Nanofiber Products",
+      "feature1": "Rapid Liquid Distribution & Zero Rewet",
+      "feature2": "Proven Germ-Killing Power (>99%)",
+      "feature3": "pH Regulation for Skin Protection",
+      "feature4": "Delivery of Skin-Calming Botanical Extracts",
+      "feature5": "Significant Cost Reduction in Diaper Production",
+      "feature6": "Superior Breathability & Odor Control",
+      "downloadBtn": "Download Technical Sheet"
+    },
+    "cta": {
+      "title": "Patented Technology. Scalable Manufacturing. Proven Results.",
+      "description": "Discover how NASK's patented nanofiber technology can elevate the performance, safety, and value of your products.",
+      "contactBtn": "Contact Us",
+      "feature1": "Patented Technology",
+      "feature2": "Scalable Manufacturing",
+      "feature3": "Proven Results"
+    },
+    "contact": {
+      "title": "Get in Touch",
+      "subtitle": "Ready to elevate your products with NASK nanofiber technology?",
+      "email1": "monzer@sarabeelmedical.com",
+      "email2": "raghad@sarabeelmedical.com",
+      "phone": "+966 56 808 1744",
+      "primaryEmail": "Primary Email",
+      "secondaryEmail": "Secondary Email",
+      "phoneLabel": "Phone",
+      "globalReach": "Global Reach",
+      "globalReachDesc": "Serving manufacturers worldwide with cutting-edge nanofiber solutions",
+      "imageAlt": "Contact NASK"
     },
     "WhatsAppFloat": {
       "tooltip": "Contact us via WhatsApp"
@@ -20,18 +118,18 @@
     "backToHome": "Back to home"
   },
   "LocaleLayout": {
-    "name": "Basmet Al-Nezam Law Firm | Professional Legal Services",
-    "short_name": "Basmet Al-Nezam",
-    "description": "Leading law firm in Saudi Arabia providing comprehensive legal services including corporate law, litigation, arbitration, and legal consultancy.",
+    "name": "NASK | Advanced Nanofiber Technology for Medical & Hygiene Products",
+    "short_name": "NASK",
+    "description": "Leading manufacturer of patented nanofiber technology for high-performance hygiene and medical materials. Internationally certified and proven results.",
     "keywords": [
-      "Basmet Al-Nezam",
-      "Law Firm",
-      "Legal Services",
-      "Saudi Arabia",
-      "Corporate Law",
-      "Litigation",
-      "Arbitration",
-      "Legal Consultancy"
+      "NASK",
+      "Nanofiber Technology",
+      "Medical Materials",
+      "Hygiene Products",
+      "Diaper Technology",
+      "Antimicrobial",
+      "Patented Technology",
+      "Advanced Materials"
     ]
   },
   "LocaleSwitcher": {
@@ -41,22 +139,22 @@
   "Header": {
     "nav": {
       "home": "Home",
-      "about": "About Us",
+      "about": "About Technology",
       "services": "Services",
-      "myservices": "Our Services",
-      "myportfolio": "Our Work",
+      "myservices": "Features",
+      "myportfolio": "Applications",
       "contactme": "Contact Us"
     },
-    "cta": "Consult Now",
-    "siteName": "Basmet Al-Nezam",
-    "siteDescription": "Law Firm"
+    "cta": "Request Sample",
+    "siteName": "NASK",
+    "siteDescription": "Nanofiber Technology"
   },
   "Footer": {
     "home": "Home",
-    "about": "About Us",
-    "myservices": "Our Services",
+    "about": "About Technology",
+    "myservices": "Features",
     "services": "Services",
-    "myportfolio": "Our Work",
+    "myportfolio": "Applications",
     "contactme": "Contact Us",
     "quickLinks": "Quick Links",
     "contactUs": "Contact",
@@ -64,24 +162,29 @@
     "phone": "Phone",
     "email": "Email",
     "location": "Location",
-    "copyright": "© {year} Basmet Al-Nezam Law Firm. All rights reserved",
-    "companyDescription": "Leading law firm providing comprehensive legal services with expertise, integrity, and commitment to excellence.",
-    "marketing": "Corporate Law",
-    "development": "Litigation",
-    "consulting": "Legal Consultation",
-    "saudiArabia": "Al-Wasita District - Opposite the General Court",
+    "brandName": "NASK",
+    "copyright": "© {year} NASK. All rights reserved",
+    "allRightsReserved": "All rights reserved",
+    "companyDescription": "Leading the next generation of high-performance hygiene and medical materials with patented nanofiber technology.",
+    "certifications": "Certifications",
+    "internationallyPatented": "Internationally Patented",
+    "patentCountries": "China, USA, Japan, Europe, Hong Kong",
+    "poweredBy": "Powered by",
+    "advancedNanofiber": "Advanced Nanofiber Technology",
+    "marketing": "Medical Products",
+    "development": "Hygiene Solutions",
+    "consulting": "Technical Support",
+    "saudiArabia": "Global Manufacturing",
     "available24_7": "Available 24/7",
-    "followMe":"Follow Us",
+    "followMe": "Follow Us",
     "socialMedia": {
       "instagram": "Instagram",
-      "snapchat": "Snapchat",
-      "x": "X",
-      "tiktok": "TikTok",
       "linkedin": "LinkedIn",
+      "x": "X",
       "email": "Email",
       "whatsapp": "WhatsApp"
     },
-    "gacaCertified": "Licensed Law Firm",
-    "certificateNumber": "License No. 12345"
+    "gacaCertified": "Internationally Patented",
+    "certificateNumber": "China, USA, Japan, Europe, Hong Kong"
   }
 }

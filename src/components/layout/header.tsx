@@ -46,7 +46,7 @@ export default function Header() {
       )}
     >
       {/* Elegant top accent line */}
-      <div className="via-primary/50 absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent to-transparent" />
+      <div className="via-primary/50 bg-linear-to-r absolute inset-x-0 top-0 h-px from-transparent to-transparent" />
 
       {/* Main Header */}
       <div className="container mx-auto px-4">
@@ -76,7 +76,7 @@ export default function Header() {
                     "group relative px-4 py-2 text-base font-medium text-white transition-all duration-300",
                     "hover:text-primary",
                     "before:absolute before:bottom-0 before:left-1/2 before:h-0.5 before:w-0 rtl:before:right-1/2",
-                    "before:from-primary before:to-primary/60 before:bg-gradient-to-r",
+                    "before:from-primary before:to-primary/60 before:bg-linear-to-r",
                     "before:-translate-x-1/2 before:transition-all before:duration-300 rtl:before:translate-x-1/2",
                     "hover:before:w-3/4",
                     "after:bg-primary/5 after:absolute after:inset-0 after:rounded-lg",
@@ -101,7 +101,7 @@ export default function Header() {
 
             <div className="flex items-center">
               <Button
-                className="ring-primary/20 shadow-primary/30 hover:shadow-primary/40 group h-auto gap-2 rounded-full px-8 py-4 text-base font-bold shadow-md ring-2 transition-all duration-300 hover:scale-105 hover:shadow-lg has-[>svg]:px-8 lg:flex"
+                className="bg-linear-to-r from-primary to-secondary ring-primary/20 hover:shadow-primary/40 group h-auto gap-2 rounded-full px-8 py-4 text-base font-bold text-white shadow-md ring-2 transition-all duration-300 hover:scale-105 hover:shadow-lg has-[>svg]:px-8 lg:flex"
                 asChild
               >
                 <Link
@@ -185,7 +185,7 @@ export default function Header() {
                     className="text-foreground hover:text-primary hover:bg-primary/10 focus:ring-primary group relative block rounded-lg px-4 py-3 text-base font-medium transition-all duration-300 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-offset-2"
                   >
                     <span className="relative z-10">{item.label}</span>
-                    <div className="from-primary/5 absolute inset-0 rounded-lg bg-gradient-to-r to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+                    <div className="from-primary/5 bg-linear-to-r absolute inset-0 rounded-lg to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
                   </Link>
                 </m.div>
               ))}
@@ -201,7 +201,7 @@ export default function Header() {
                 className="border-border/50 border-t pt-4"
               >
                 <Button
-                  className="bg-primary ring-primary/20 h-auto w-full items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold shadow-xl ring-2 transition-all duration-300 hover:scale-105 hover:shadow-2xl has-[>svg]:px-6"
+                  className="bg-linear-to-r from-primary to-secondary ring-primary/20 h-auto w-full items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-white shadow-xl ring-2 transition-all duration-300 hover:scale-105 hover:shadow-2xl has-[>svg]:px-6"
                   asChild
                 >
                   <a

@@ -105,7 +105,7 @@ const Footer = () => {
                       <Icon
                         className={`h-5 w-5 ${index === 1 ? "fill-current" : "text-current"} transition-transform group-hover:scale-110`}
                       />
-                      <div className="from-primary/10 absolute inset-0 rounded-xl bg-gradient-to-br to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+                      <div className="from-primary/10 bg-linear-to-br absolute inset-0 rounded-xl to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
                     </m.a>
                   );
                 })}
@@ -121,7 +121,7 @@ const Footer = () => {
             viewport={{ once: true }}
             className="lg:col-span-2"
           >
-            <h3 className="text-secondary-foreground mb-6 text-sm font-bold uppercase tracking-wider text-white">
+            <h3 className="text-secondary-foreground mb-6 text-sm font-bold uppercase tracking-wider">
               {t("quickLinks")}
             </h3>
             <ul className="space-y-3">
@@ -149,7 +149,7 @@ const Footer = () => {
             viewport={{ once: true }}
             className="lg:col-span-2"
           >
-            <h3 className="text-secondary-foreground mb-6 text-sm font-bold uppercase tracking-wider text-white">
+            <h3 className="text-secondary-foreground mb-6 text-sm font-bold uppercase tracking-wider">
               {t("services")}
             </h3>
             <ul className="space-y-3">
@@ -177,7 +177,7 @@ const Footer = () => {
             viewport={{ once: true }}
             className="lg:col-span-4"
           >
-            <h3 className="text-secondary-foreground mb-6 text-sm font-bold uppercase tracking-wider text-white">
+            <h3 className="text-secondary-foreground mb-6 text-sm font-bold uppercase tracking-wider">
               {t("contactme")}
             </h3>
             <div className="space-y-4">

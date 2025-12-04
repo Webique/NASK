@@ -1,16 +1,16 @@
 export const siteConfig = {
   links: {
-    instagram: "https://www.instagram.com/basmatallnidam",
-    snapchat: "https://www.snapchat.com/@basmatallnidam",
-    x: "https://x.com/basmatallnidam",
-    tiktok: "https://www.tiktok.com/@basmatallnidam",
-    whatsapp: "https://wa.me/966507058588"
+    instagram: "https://www.instagram.com/nask_nanofiber",
+    linkedin: "https://www.linkedin.com/company/nask-nanofiber",
+    x: "https://x.com/nask_nanofiber",
+    whatsapp: "https://wa.me/966568081744"
   },
 
   support: {
-    phone: "+966-50 705 8588",
-    email: "info@basmet-alnezam.sa",
-    whatsapp: "+966507058588"
+    phone: "+966 56 808 1744",
+    email: "monzer@sarabeelmedical.com",
+    email2: "raghad@sarabeelmedical.com",
+    whatsapp: "+966568081744"
   },
 
   url: process.env.NEXT_PUBLIC_SITE_URL!,
