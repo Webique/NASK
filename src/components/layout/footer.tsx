@@ -47,7 +47,8 @@ const Footer = () => {
             className="lg:col-span-5"
           >
             <Logo
-              imgClassName="w-48 lg:w-56 brightness-0 invert drop-shadow-lg"
+              src="/images/logos/3-white.png"
+              imgClassName="w-48 lg:w-56"
               className="mb-6"
               width={260}
               height={50}

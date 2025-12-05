@@ -103,7 +103,7 @@ export default function Validation() {
                   <div className="absolute inset-[2px] rounded-2xl bg-white" />
 
                   {/* Content */}
-                  <div className="relative z-10 flex items-start gap-4">
+                  <div className="relative z-10 flex items-center gap-4">
                     {/* Icon */}
                     <div className="bg-linear-to-br from-primary to-secondary flex h-14 w-14 shrink-0 items-center justify-center rounded-xl shadow-lg">
                       <Icon className="h-7 w-7 text-white" />
