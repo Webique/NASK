@@ -16,7 +16,7 @@
     "embla-carousel-react": "^8.6.0",
     "lucide-react": "^0.544.0",
     "motion": "^12.23.12",
-    "next": "15.5.0",
+    "next": "15.5.9",
     "next-image-export-optimizer": "^1.19.0",
     "next-intl": "^4.0.0",
     "react": "19.1.0",
