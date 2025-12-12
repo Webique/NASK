@@ -64,7 +64,7 @@ export default function Validation() {
         </m.div>
 
         {/* Laboratory Image */}
-        <m.div
+        {/* <m.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
@@ -81,7 +81,7 @@ export default function Validation() {
             />
             <div className="bg-linear-to-t absolute inset-0 from-black/40 via-transparent to-transparent" />
           </div>
-        </m.div>
+        </m.div> */}
 
         {/* Test Results Grid */}
         <div className="grid gap-6 md:grid-cols-2">
