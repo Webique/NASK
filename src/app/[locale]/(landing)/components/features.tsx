@@ -76,7 +76,7 @@ export default function Features() {
           />
         </m.div>
 
-        {/* Features Grid */}
+        {/* Features Grid - Horizontal cards with top accent */}
         <div className="mb-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, index) => (
             <m.div
@@ -85,16 +85,21 @@ export default function Features() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true, margin: "-100px" }}
-              className="border-primary group relative overflow-hidden rounded-xl border-l-4 bg-white p-6 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+              className="group relative overflow-hidden rounded-xl bg-white p-6 shadow-lg transition-all duration-300 hover:shadow-xl"
             >
+              {/* Top accent bar */}
+              <div className="bg-linear-to-r from-primary to-secondary absolute left-0 right-0 top-0 h-1 transition-all duration-300 group-hover:h-1.5"></div>
+
               {/* Gradient Background on Hover */}
               <div className="bg-linear-to-r from-primary/5 to-secondary/5 absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
 
-              <div className="relative z-10 flex items-start gap-3">
-                <div className="bg-linear-to-br from-primary to-secondary flex h-10 w-10 shrink-0 items-center justify-center rounded-full font-bold text-white shadow-md">
+              <div className="relative z-10 flex flex-col items-start gap-3">
+                <div className="bg-linear-to-br from-primary to-secondary flex h-12 w-12 shrink-0 items-center justify-center rounded-lg font-bold text-white shadow-md transition-transform duration-300 group-hover:scale-110">
                   {index + 1}
                 </div>
-                <p className="font-medium text-gray-700">{feature}</p>
+                <p className="font-medium leading-relaxed text-gray-700">
+                  {feature}
+                </p>
               </div>
             </m.div>
           ))}

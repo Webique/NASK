@@ -84,7 +84,7 @@ export default function Validation() {
         </m.div> */}
 
         {/* Test Results Grid */}
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-8 md:grid-cols-2">
           {tests.map((test, index) => {
             const Icon = test.icon;
             return (
@@ -96,25 +96,22 @@ export default function Validation() {
                 viewport={{ once: true, margin: "-100px" }}
                 className="group relative"
               >
-                {/* Card */}
-                <div className="relative h-full overflow-hidden rounded-2xl bg-white p-6 shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
-                  {/* Gradient Border on Hover */}
-                  <div className="bg-linear-to-r from-primary to-secondary absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                  <div className="absolute inset-[2px] rounded-2xl bg-white" />
+                {/* Card with vertical layout */}
+                <div className="bg-linear-to-br relative h-full overflow-hidden rounded-2xl from-white to-gray-50 p-8 shadow-lg transition-all duration-500 hover:shadow-2xl">
+                  {/* Accent line on left */}
+                  <div className="bg-linear-to-b from-primary to-secondary absolute inset-y-0 left-0 w-1 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
                   {/* Content */}
-                  <div className="relative z-10 flex items-center gap-4">
+                  <div className="relative z-10 flex flex-col items-start gap-4">
                     {/* Icon */}
-                    <div className="bg-linear-to-br from-primary to-secondary flex h-14 w-14 shrink-0 items-center justify-center rounded-xl shadow-lg">
-                      <Icon className="h-7 w-7 text-white" />
+                    <div className="bg-linear-to-br from-primary to-secondary flex h-16 w-16 items-center justify-center rounded-full shadow-lg transition-transform duration-300 group-hover:scale-110">
+                      <Icon className="h-8 w-8 text-white" />
                     </div>
 
                     {/* Text */}
-                    <div className="flex-1 pt-2">
-                      <p className="font-semibold leading-relaxed text-gray-700">
-                        {test.text}
-                      </p>
-                    </div>
+                    <p className="text-lg font-semibold leading-relaxed text-gray-800">
+                      {test.text}
+                    </p>
                   </div>
                 </div>
               </m.div>
