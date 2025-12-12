@@ -4,6 +4,7 @@ import type { Locale } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { use } from "react";
 
+import Products from "@/app/[locale]/(landing)/components/products";
 import WhatsAppFloat from "@/components/whatsapp-float";
 
 import About from "./components/about";
@@ -35,6 +36,7 @@ export default function IndexPage({ params }: PageProps) {
       <Validation />
       <Certifications />
       <Features />
+      <Products />
       <Testimonials />
       {/* <Team /> */}
       <FAQ />

@@ -160,6 +160,43 @@
       "question5": "How can I request samples or technical specifications?",
       "answer5": "Contact our team directly via email at monzer@sarabeelmedical.com or raghad@sarabeelmedical.com, or call +966 56 808 1744. We'll provide samples and detailed technical documentation."
     },
+    "products": {
+      "title": "NASK Products",
+      "subtitle": "Discover our range of nanofiber-enhanced solutions designed for superior performance",
+      "learnMore": "Learn More",
+      "product1": {
+        "title": "NASK Nanofiber Baby Diaper",
+        "description": "The ultimate rash-free baby diaper solution with germ-killing technology that eliminates 99% of harmful bacteria",
+        "feature1": "Instant liquid relocation with multi-channel nanofiber",
+        "feature2": "Zero-rewet surface for continuous dryness",
+        "feature3": ">99% antibacterial efficacy",
+        "feature4": "pH-balancing layer for skin protection"
+      },
+      "product2": {
+        "title": "NASK Nanofiber Adult Diaper",
+        "description": "Advanced incontinence care combining rapid absorption with antimicrobial protection and skin-friendly design",
+        "feature1": "Fast absorption with zero backflow",
+        "feature2": "Active antimicrobial layer reducing infection risk",
+        "feature3": "Odor-neutralizing nanofiber chemistry",
+        "feature4": "Slim, ergonomic profile for discreet wear"
+      },
+      "product3": {
+        "title": "NASK Nanofiber Coated Sheet",
+        "description": "Pure nanofiber top sheets for OEM/ODM manufacturers to upgrade existing nonwoven products",
+        "feature1": "Uniform electrospun nanofiber coating",
+        "feature2": "Configurable hydrophilic or hydrophobic profiles",
+        "feature3": "Optional functional enhancements",
+        "feature4": "Compatible with standard converting processes"
+      },
+      "whyChoose": {
+        "title": "Why Choose NASK Products",
+        "subtitle": "Trusted by manufacturers worldwide for innovation and reliability",
+        "patented": "Patented Technology",
+        "verified": "Lab-Verified Performance",
+        "scalable": "Scalability",
+        "customization": "Customization"
+      }
+    },
     "contact": {
       "title": "Get in Touch",
       "subtitle": "Ready to elevate your products with NASK nanofiber technology?",
