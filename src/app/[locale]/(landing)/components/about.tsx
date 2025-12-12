@@ -1,27 +1,25 @@
 "use client";
 
-import { Award, CheckCircle2, Globe } from "lucide-react";
 import * as m from "motion/react-m";
-import ExportedImage from "next-image-export-optimizer";
 import { useTranslations } from "next-intl";
 
 export default function About() {
   const t = useTranslations("IndexPage.about");
 
-  const advantages = [
-    t("advantage1"),
-    t("advantage2"),
-    t("advantage3"),
-    t("advantage4")
-  ];
+  // const advantages = [
+  //   t("advantage1"),
+  //   t("advantage2"),
+  //   t("advantage3"),
+  //   t("advantage4")
+  // ];
 
-  const patents = [
-    t("country1"),
-    t("country2"),
-    t("country3"),
-    t("country4"),
-    t("country5")
-  ];
+  // const patents = [
+  //   t("country1"),
+  //   t("country2"),
+  //   t("country3"),
+  //   t("country4"),
+  //   t("country5")
+  // ];
 
   return (
     <section
@@ -57,8 +55,7 @@ export default function About() {
         </m.div>
 
         {/* Main Content Grid */}
-        <div className="grid gap-8 lg:grid-cols-2 lg:items-stretch">
-          {/* Left: Image + {t("keyAdvantages")} */}
+        {/* <div className="grid gap-8 lg:grid-cols-2 lg:items-stretch">
           <m.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -66,7 +63,6 @@ export default function About() {
             viewport={{ once: true, margin: "-100px" }}
             className="flex flex-col space-y-6"
           >
-            {/* Technology Image */}
             <div className="relative overflow-hidden rounded-2xl shadow-xl">
               <ExportedImage
                 src="/images/technology.jpeg"
@@ -86,7 +82,6 @@ export default function About() {
               </div>
             </div>
 
-            {/* {t("keyAdvantages")} Card */}
             <div className="group flex flex-1 flex-col rounded-2xl bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-2xl">
               <div className="mb-6 flex items-center gap-3">
                 <div className="bg-linear-to-br from-primary to-secondary flex h-12 w-12 items-center justify-center rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-110">
@@ -114,7 +109,6 @@ export default function About() {
             </div>
           </m.div>
 
-          {/* Right: Image + Global Patents */}
           <m.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -122,7 +116,6 @@ export default function About() {
             viewport={{ once: true, margin: "-100px" }}
             className="flex flex-col space-y-6"
           >
-            {/* Manufacturing Image */}
             <div className="relative overflow-hidden rounded-2xl shadow-xl">
               <ExportedImage
                 src="/images/manufacturing.jpeg"
@@ -142,7 +135,6 @@ export default function About() {
               </div>
             </div>
 
-            {/* Global Patents Card */}
             <div className="group flex flex-1 flex-col rounded-2xl bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-2xl">
               <div className="mb-6 flex items-center gap-3">
                 <div className="bg-linear-to-br from-secondary to-primary flex h-12 w-12 items-center justify-center rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-110">
@@ -169,7 +161,7 @@ export default function About() {
               </ul>
             </div>
           </m.div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
