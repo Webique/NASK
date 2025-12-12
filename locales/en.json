@@ -48,6 +48,52 @@
       "country4": "Europe",
       "country5": "Hong Kong"
     },
+    "technology": {
+      "badge": "Advanced Material Science",
+      "title": "Key Functional Advantages",
+      "description": "NASK's patented nanofiber technology represents a major advancement in applied material science. Built through precision electrospinning, our nanofiber layers form an ultra-fine network engineered to enhance the performance of nonwoven substrates across hygiene, medical, filtration, and industrial applications.",
+      "advantage1": {
+        "title": "Superior Fluid Dynamics",
+        "description": "Multiple hydrophilic channels provide rapid liquid relocation, controlled fluid transport, zero backflow behavior, and optimized distribution across the substrate."
+      },
+      "advantage2": {
+        "title": "Antimicrobial Performance",
+        "description": "Eliminates >99% of bacteria and fungi through electrostatic attraction, hydrophobic interaction, and bacterial membrane disruption. Validated by AATCC 100-2019 standards."
+      },
+      "advantage3": {
+        "title": "pH Regulation",
+        "description": "pH-balancing components restore and maintain healthy pH 5.5, preventing irritation and supporting the skin's natural resilience for sensitive applications."
+      },
+      "advantage4": {
+        "title": "Active Ingredient Delivery",
+        "description": "Nanofiber structure stores and releases functional ingredients through mechanical interlocking—enhanced stability, no preservatives needed, targeted release."
+      },
+      "advantage5": {
+        "title": "Exceptional Breathability",
+        "description": "High water-vapor transmission through fiber network and micro-channels. Materials remain light, ventilated, and comfortable even under high humidity."
+      },
+      "advantage6": {
+        "title": "Odor Neutralization",
+        "description": "Actively decomposes urea and ammonia—the primary sources of odor—preserving freshness and maintaining a healthy micro-environment."
+      }
+    },
+    "howItWorks": {
+      "title": "How NASK Nanofibers Are Made",
+      "subtitle": "At the core of our platform is a highly controlled electrospinning process that deposits nanofibers uniformly onto a wide range of base substrates.",
+      "step1": {
+        "title": "Electrospinning",
+        "description": "Creating nanofibers with consistent diameter and morphology through precision-controlled electrical fields."
+      },
+      "step2": {
+        "title": "Precision Coating",
+        "description": "Forming a stable nanofiber functional layer with uniform distribution across the substrate surface."
+      },
+      "step3": {
+        "title": "Advanced Integration",
+        "description": "Bonding nanofibers to nonwoven materials without compromising breathability or softness."
+      },
+      "result": "The result: Materials with completely new performance capabilities"
+    },
     "validation": {
       "title": "Scientific & Laboratory Validation",
       "subtitle": "All nanofiber top sheets have undergone testing by accredited laboratories",
