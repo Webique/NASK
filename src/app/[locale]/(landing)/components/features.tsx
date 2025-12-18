@@ -76,6 +76,23 @@ export default function Features() {
           />
         </m.div>
 
+        {/* Stats Image */}
+        <m.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="mb-12 overflow-hidden rounded-2xl shadow-xl"
+        >
+          <ExportedImage
+            src="/images/stats.jpg"
+            alt={t("imageAlt")}
+            className="h-80 w-full object-cover"
+            width={1200}
+            height={320}
+          />
+        </m.div>
+
         {/* Features Grid - Horizontal cards with top accent */}
         <div className="mb-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, index) => (
