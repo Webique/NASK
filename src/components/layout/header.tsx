@@ -62,13 +62,13 @@ export default function Header() {
             <Logo
               src="/images/logoo.png"
               className="lg:hidden"
-              imgClassName="w-20 max-h-8"
+              imgClassName="h-8 w-auto"
             />
             {/* Desktop logo - same logo regardless of scroll */}
             <Logo
               src="/images/logoo.png"
               className="hidden lg:block"
-              imgClassName="w-24 max-h-9"
+              imgClassName="h-9 w-auto"
             />
           </m.div>
 
