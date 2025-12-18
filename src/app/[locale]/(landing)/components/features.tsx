@@ -116,7 +116,7 @@ export default function Features() {
           className="text-center"
         >
           <button
-            onClick={() => setShowStats(true)}
+            onClick={() => setShowStats((prev) => !prev)}
             className="bg-linear-to-r from-primary to-secondary ring-primary/20 hover:shadow-primary/40 group inline-flex items-center gap-2 rounded-full px-8 py-4 font-semibold text-white shadow-lg ring-2 transition-all duration-300 hover:scale-105 hover:shadow-xl"
           >
             <Download
