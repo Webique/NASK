@@ -48,10 +48,10 @@ const Footer = () => {
           >
             <Logo
               src="/images/logoo.png"
-              imgClassName="w-48 lg:w-56"
+              imgClassName="w-32 lg:w-40"
               className="mb-6"
-              width={260}
-              height={50}
+              width={200}
+              height={40}
             />
             <p className="mb-8 max-w-md text-base leading-relaxed text-gray-300">
               {t("companyDescription")}

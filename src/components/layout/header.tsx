@@ -59,9 +59,17 @@ export default function Header() {
             className="flex h-full items-center gap-3"
           >
             {/* Mobile logo - always colored */}
-            <Logo src="/images/logoo.png" className="lg:hidden" />
+            <Logo
+              src="/images/logoo.png"
+              className="lg:hidden"
+              imgClassName="w-24"
+            />
             {/* Desktop logo - same logo regardless of scroll */}
-            <Logo src="/images/logoo.png" className="hidden lg:block" />
+            <Logo
+              src="/images/logoo.png"
+              className="hidden lg:block"
+              imgClassName="w-28"
+            />
           </m.div>
 
           {/* Desktop Navigation */}
