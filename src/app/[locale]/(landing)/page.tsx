@@ -20,6 +20,7 @@ import Technology from "./components/technology";
 import Testimonials from "./components/testimonials";
 import Validation from "./components/validation";
 import Values from "./components/values";
+import WhyChoose from "./components/why-choose";
 
 export default function IndexPage({ params }: PageProps) {
   const { locale } = use(params);
@@ -39,13 +40,14 @@ export default function IndexPage({ params }: PageProps) {
       <Technology />
       <HowItWorks />
 
+      {/* Products & Features */}
+      <Products />
+      <Features />
+
       {/* Validation & Trust */}
       <Validation />
+      <WhyChoose />
       <Certifications />
-
-      {/* Product Benefits & Showcase */}
-      <Features />
-      <Products />
 
       {/* Social Proof & Contact */}
       <Testimonials />
