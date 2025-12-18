@@ -13,7 +13,7 @@ type indexProps = {
 };
 
 export default function Logo({
-  src = "/images/logos/3.png",
+  src = "/images/logoo.png",
   width = 180,
   height = 41,
   className,

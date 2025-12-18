@@ -47,7 +47,7 @@ const Footer = () => {
             className="lg:col-span-5"
           >
             <Logo
-              src="/images/logos/3-white.png"
+              src="/images/logoo.png"
               imgClassName="w-48 lg:w-56"
               className="mb-6"
               width={260}

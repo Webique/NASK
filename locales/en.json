@@ -1,8 +1,8 @@
 {
   "IndexPage": {
     "hero": {
-      "title": "Nanofiber Technology is the Future",
-      "subtitle": "We Invented the Advantage",
+      "title": "Nanofiber Technology is the Future — We Invented the Advantage",
+      "subtitle": "Sarabeel Commercial is the Exclusive Representative of NASK in the Middle East & Africa",
       "description": "Our internationally patented technology leads the next generation of high-performance hygiene and medical materials.",
       "exploreBtn": "Explore Our Technology",
       "sampleBtn": "Request a Sample",
@@ -15,7 +15,7 @@
       "description": "We are committed to enriching the body, mind and soul of all mankind through the development of high quality medical devices and personal health care products."
     },
     "values": {
-      "title": "At NASK",
+      "title": "At Sarabeel commercial :",
       "subtitle": "We have strong belief in 3 core values",
       "value1": {
         "title": "Customer Excellence",
@@ -340,7 +340,4 @@
       "email": "Email",
       "whatsapp": "WhatsApp"
     },
-    "gacaCertified": "Internationally Patented Technology",
-    "certificateNumber": "China, USA, Japan, Europe, Hong Kong"
-  }
-}
+    "gacaCertified": "Internationally Patented Technolo
