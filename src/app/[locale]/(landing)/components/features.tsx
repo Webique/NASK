@@ -68,7 +68,7 @@ export default function Features() {
           className="mb-12 overflow-hidden rounded-2xl shadow-2xl"
         >
           <ExportedImage
-            src="/images/features.jpeg"
+            src="/images/premium.jpg"
             alt={t("imageAlt")}
             className="h-80 w-full object-cover"
             width={1200}
