@@ -4,9 +4,11 @@ import { Download, Sparkles } from "lucide-react";
 import * as m from "motion/react-m";
 import ExportedImage from "next-image-export-optimizer";
 import { useTranslations } from "next-intl";
+import { useState } from "react";
 
 export default function Features() {
   const t = useTranslations("IndexPage.features");
+  const [showStats, setShowStats] = useState(false);
 
   const features = [
     t("feature1"),
@@ -70,24 +72,7 @@ export default function Features() {
           <ExportedImage
             src="/images/premium.jpg"
             alt={t("imageAlt")}
-            className="h-80 w-full object-cover"
-            width={1200}
-            height={320}
-          />
-        </m.div>
-
-        {/* Stats Image */}
-        <m.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          viewport={{ once: true }}
-          className="mb-12 overflow-hidden rounded-2xl shadow-xl"
-        >
-          <ExportedImage
-            src="/images/stats.jpg"
-            alt={t("imageAlt")}
-            className="h-80 w-full object-cover"
+            className="w-full h-auto object-contain"
             width={1200}
             height={320}
           />
@@ -130,7 +115,10 @@ export default function Features() {
           viewport={{ once: true, margin: "-100px" }}
           className="text-center"
         >
-          <button className="bg-linear-to-r from-primary to-secondary ring-primary/20 hover:shadow-primary/40 group inline-flex items-center gap-2 rounded-full px-8 py-4 font-semibold text-white shadow-lg ring-2 transition-all duration-300 hover:scale-105 hover:shadow-xl">
+          <button
+            onClick={() => setShowStats(true)}
+            className="bg-linear-to-r from-primary to-secondary ring-primary/20 hover:shadow-primary/40 group inline-flex items-center gap-2 rounded-full px-8 py-4 font-semibold text-white shadow-lg ring-2 transition-all duration-300 hover:scale-105 hover:shadow-xl"
+          >
             <Download
               size={20}
               className="transition-transform group-hover:translate-y-1"
@@ -138,6 +126,24 @@ export default function Features() {
             {t("downloadBtn")}
           </button>
         </m.div>
+
+        {showStats && (
+          <m.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            viewport={{ once: true }}
+            className="mt-8 overflow-hidden rounded-2xl shadow-xl"
+          >
+            <ExportedImage
+              src="/images/stats.jpg"
+              alt={t("imageAlt")}
+              className="w-full h-auto object-contain"
+              width={1200}
+              height={320}
+            />
+          </m.div>
+        )}
       </div>
     </section>
   );
