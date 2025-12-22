@@ -46,12 +46,12 @@ export default function Hero() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
-        className="absolute end-24 top-1/3 z-20 hidden lg:block xl:end-32"
+        className="absolute end-8 top-1/3 z-20 hidden lg:block xl:end-12"
       >
         <Logo
           src="/images/logoo.png"
           className="pointer-events-none"
-          imgClassName="h-32 w-auto lg:h-40 xl:h-48"
+          imgClassName="h-48 w-auto lg:h-64 xl:h-80"
           href="#"
         />
       </m.div>
