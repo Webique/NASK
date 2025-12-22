@@ -7,7 +7,6 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import Logo from "@/components/ui/logo";
 import { siteConfig } from "@/config/site";
 
 export default function Hero() {
@@ -46,13 +45,15 @@ export default function Hero() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
-        className="absolute end-4 top-1/3 z-20 hidden lg:block xl:end-6"
+        className="absolute end-32 top-1/4 z-20 hidden lg:block xl:end-48 2xl:end-64"
       >
-        <Logo
+        <ExportedImage
           src="/images/logoo.png"
-          className="pointer-events-none"
-          imgClassName="h-64 w-auto lg:h-80 xl:h-96 2xl:h-[28rem]"
-          href="#"
+          alt="NASK Logo"
+          width={800}
+          height={800}
+          className="h-96 w-auto lg:h-[32rem] xl:h-[40rem] 2xl:h-[48rem] pointer-events-none"
+          priority
         />
       </m.div>
 
