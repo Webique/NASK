@@ -31,7 +31,7 @@ export default function Header() {
   const navItems = [
     { label: t("nav.home"), href: "/", clickable: true },
     { label: t("nav.about"), href: "#technology", clickable: true },
-    { label: t("nav.myservices"), href: "#", clickable: false },
+    { label: t("nav.myservices"), href: "#technology", clickable: true },
     { label: t("nav.contactme"), href: "#contact", clickable: true }
   ];
 

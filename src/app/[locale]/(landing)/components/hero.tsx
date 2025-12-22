@@ -46,16 +46,14 @@ export default function Hero() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
-        className="absolute end-8 top-1/2 z-20 hidden -translate-y-1/2 lg:block xl:end-16"
+        className="absolute end-24 top-1/3 z-20 hidden lg:block xl:end-32"
       >
-        <div className="bg-background/20 backdrop-blur-md rounded-2xl p-6 shadow-2xl ring-2 ring-white/10">
-          <Logo
-            src="/images/logoo.png"
-            className="pointer-events-none"
-            imgClassName="h-32 w-auto lg:h-40 xl:h-48"
-            href="#"
-          />
-        </div>
+        <Logo
+          src="/images/logoo.png"
+          className="pointer-events-none"
+          imgClassName="h-32 w-auto lg:h-40 xl:h-48"
+          href="#"
+        />
       </m.div>
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 py-24 pt-40 sm:px-6 lg:px-8">
