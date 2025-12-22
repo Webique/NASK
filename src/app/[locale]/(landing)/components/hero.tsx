@@ -52,7 +52,7 @@ export default function Hero() {
           alt="NASK Logo"
           width={800}
           height={800}
-          className="h-96 w-auto lg:h-[32rem] xl:h-[40rem] 2xl:h-[48rem] pointer-events-none"
+          className="h-80 w-auto lg:h-[28rem] xl:h-[36rem] 2xl:h-[42rem] pointer-events-none"
           priority
         />
       </m.div>
