@@ -29,11 +29,10 @@ export default function Header() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const navItems = [
-    { label: t("nav.home"), href: "/" },
-    { label: t("nav.about"), href: "#about" },
-    { label: t("nav.myservices"), href: "#services" },
-    { label: t("nav.myportfolio"), href: "#portfolio" },
-    { label: t("nav.contactme"), href: "#contact" }
+    { label: t("nav.home"), href: "/", clickable: true },
+    { label: t("nav.about"), href: "#technology", clickable: true },
+    { label: t("nav.myservices"), href: "#", clickable: false },
+    { label: t("nav.contactme"), href: "#contact", clickable: true }
   ];
 
   return (
@@ -81,23 +80,44 @@ export default function Header() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 * index, duration: 0.4 }}
               >
-                <Link
-                  href={item.href}
-                  className={cn(
-                    "group relative px-4 py-2 text-base font-medium transition-all duration-300",
-                    isScrolled ? "text-foreground" : "text-white",
-                    "hover:text-primary",
-                    "before:absolute before:bottom-0 before:left-1/2 before:h-0.5 before:w-0 rtl:before:right-1/2",
-                    "before:from-primary before:to-primary/60 before:bg-linear-to-r",
-                    "before:-translate-x-1/2 before:transition-all before:duration-300 rtl:before:translate-x-1/2",
-                    "hover:before:w-3/4",
-                    "after:bg-primary/5 after:absolute after:inset-0 after:rounded-lg",
-                    "after:opacity-0 after:transition-opacity after:duration-300",
-                    "hover:after:opacity-100"
-                  )}
-                >
-                  <span className="relative z-10">{item.label}</span>
-                </Link>
+                {item.clickable ? (
+                  <Link
+                    href={item.href}
+                    onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
+                      if (item.href.startsWith("#")) {
+                        e.preventDefault();
+                        const element = document.querySelector(item.href);
+                        if (element) {
+                          element.scrollIntoView({ behavior: "smooth" });
+                        }
+                      }
+                    }}
+                    className={cn(
+                      "group relative px-4 py-2 text-base font-medium transition-all duration-300",
+                      isScrolled ? "text-foreground" : "text-white",
+                      "hover:text-primary cursor-pointer",
+                      "before:absolute before:bottom-0 before:left-1/2 before:h-0.5 before:w-0 rtl:before:right-1/2",
+                      "before:from-primary before:to-primary/60 before:bg-linear-to-r",
+                      "before:-translate-x-1/2 before:transition-all before:duration-300 rtl:before:translate-x-1/2",
+                      "hover:before:w-3/4",
+                      "after:bg-primary/5 after:absolute after:inset-0 after:rounded-lg",
+                      "after:opacity-0 after:transition-opacity after:duration-300",
+                      "hover:after:opacity-100"
+                    )}
+                  >
+                    <span className="relative z-10">{item.label}</span>
+                  </Link>
+                ) : (
+                  <span
+                    className={cn(
+                      "group relative px-4 py-2 text-base font-medium transition-all duration-300",
+                      isScrolled ? "text-foreground/60" : "text-white/60",
+                      "cursor-default"
+                    )}
+                  >
+                    <span className="relative z-10">{item.label}</span>
+                  </span>
+                )}
               </m.div>
             ))}
           </nav>
@@ -191,14 +211,31 @@ export default function Header() {
                   }}
                   transition={{ delay: 0.1 * index, duration: 0.4 }}
                 >
-                  <Link
-                    href={item.href}
-                    onClick={() => setIsMenuOpen(false)}
-                    className="text-foreground hover:text-primary hover:bg-primary/10 focus:ring-primary group relative block rounded-lg px-4 py-3 text-base font-medium transition-all duration-300 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-offset-2"
-                  >
-                    <span className="relative z-10">{item.label}</span>
-                    <div className="from-primary/5 bg-linear-to-r absolute inset-0 rounded-lg to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
-                  </Link>
+                  {item.clickable ? (
+                    <Link
+                      href={item.href}
+                      onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
+                        setIsMenuOpen(false);
+                        if (item.href.startsWith("#")) {
+                          e.preventDefault();
+                          setTimeout(() => {
+                            const element = document.querySelector(item.href);
+                            if (element) {
+                              element.scrollIntoView({ behavior: "smooth" });
+                            }
+                          }, 100);
+                        }
+                      }}
+                      className="text-foreground hover:text-primary hover:bg-primary/10 focus:ring-primary group relative block rounded-lg px-4 py-3 text-base font-medium transition-all duration-300 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-offset-2 cursor-pointer"
+                    >
+                      <span className="relative z-10">{item.label}</span>
+                      <div className="from-primary/5 bg-linear-to-r absolute inset-0 rounded-lg to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+                    </Link>
+                  ) : (
+                    <span className="text-foreground/60 group relative block rounded-lg px-4 py-3 text-base font-medium cursor-default">
+                      <span className="relative z-10">{item.label}</span>
+                    </span>
+                  )}
                 </m.div>
               ))}
 
