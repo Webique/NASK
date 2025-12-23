@@ -45,7 +45,7 @@ export default function Hero() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
-        className="absolute end-32 top-1/4 z-20 hidden lg:block xl:end-48 2xl:end-64"
+        className="absolute end-24 top-1/4 z-20 hidden lg:block xl:end-40 2xl:end-56"
       >
         <ExportedImage
           src="/images/logoo.png"
