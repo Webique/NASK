@@ -49,16 +49,11 @@ const Footer = () => {
             <div className="mb-6 flex items-center gap-4">
               <Link href="/" className="flex items-center">
                 <img
-                  src="/images/logo4.jpg"
+                  src="/images/logo11.png"
                   alt="Logo"
                   className="h-10 w-auto lg:h-12"
                 />
               </Link>
-              <img
-                src="/images/logoo.png"
-                alt="NASK Logo"
-                className="h-8 w-auto lg:h-10"
-              />
             </div>
             <p className="mb-8 max-w-md text-base leading-relaxed text-gray-300">
               {t("companyDescription")}
