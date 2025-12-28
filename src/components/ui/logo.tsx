@@ -1,4 +1,4 @@
-import ExportedImage from "next-image-export-optimizer";
+import Image from "next/image";
 
 import { Link as I18nLink } from "@/i18n/navigation.public";
 import { cn } from "@/lib/utils";
@@ -26,7 +26,7 @@ export default function Logo({
       aria-label="Logo"
       className={cn("flex items-center gap-2.5", className)}
     >
-      <ExportedImage
+      <Image
         className={cn(
           "h-auto w-auto max-h-12 max-w-full overflow-hidden",
           imgClassName
@@ -34,9 +34,9 @@ export default function Logo({
         src={src}
         width={width}
         height={height}
-        placeholder="empty"
-        priority
         alt="Logo"
+        priority
+        unoptimized
       />
     </I18nLink>
   );
