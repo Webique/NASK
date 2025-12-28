@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { Link as I18nLink } from "@/i18n/navigation.public";
 import { cn } from "@/lib/utils";
 
@@ -24,14 +26,14 @@ export default function Logo({
       aria-label="Logo"
       className={cn("flex items-center gap-2.5", className)}
     >
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
+      <Image
         className={imgClassName || "h-auto w-auto"}
         src={src}
         width={width}
         height={height}
         alt="Logo"
-        loading="eager"
+        priority
+        unoptimized
       />
     </I18nLink>
   );
