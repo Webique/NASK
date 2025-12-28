@@ -25,10 +25,7 @@ export default function Logo({
       className={cn("flex items-center gap-2.5", className)}
     >
       <img
-        className={cn(
-          "h-auto w-auto max-h-12 max-w-full overflow-hidden",
-          imgClassName
-        )}
+        className={imgClassName || "h-auto w-auto"}
         src={src}
         width={width}
         height={height}
