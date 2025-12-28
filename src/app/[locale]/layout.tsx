@@ -74,21 +74,21 @@ export async function generateMetadata({ params }: { params: Params }) {
     },
     icons: {
       icon: [
-        { url: "/favicon.ico" },
+        { url: "/images/logooo.png" },
         {
-          url: "/favicon/web-app-manifest-192x192.png",
+          url: "/images/logooo.png",
           sizes: "192x192",
           type: "image/png"
         },
         {
-          url: "/favicon/web-app-manifest-512x512.png",
+          url: "/images/logooo.png",
           sizes: "512x512",
           type: "image/png"
         }
       ],
       apple: [
         {
-          url: "/favicon/apple-touch-icon.png",
+          url: "/images/logooo.png",
           sizes: "180x180",
           type: "image/png"
         }
