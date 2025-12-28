@@ -49,7 +49,7 @@ const Footer = () => {
             <div className="mb-6 flex items-center gap-4">
               <Link href="/" className="flex items-center">
                 <img
-                  src="/images/logo1.jpg"
+                  src="/images/logo1 copy.jpg"
                   alt="Logo"
                   className="h-10 w-auto lg:h-12"
                 />
