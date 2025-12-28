@@ -46,13 +46,20 @@ const Footer = () => {
             viewport={{ once: true }}
             className="lg:col-span-5"
           >
-            <Link href="/" className="mb-6 block">
+            <div className="mb-6 flex items-center gap-4">
+              <Link href="/" className="flex items-center">
+                <img
+                  src="/favicon/favicon.svg"
+                  alt="Logo"
+                  className="h-10 w-auto lg:h-12"
+                />
+              </Link>
               <img
-                src="/images/logo1.png"
-                alt="Logo"
-                className="h-10 w-auto lg:h-12"
+                src="/images/logoo.png"
+                alt="NASK Logo"
+                className="h-8 w-auto lg:h-10"
               />
-            </Link>
+            </div>
             <p className="mb-8 max-w-md text-base leading-relaxed text-gray-300">
               {t("companyDescription")}
             </p>
