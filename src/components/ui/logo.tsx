@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import { Link as I18nLink } from "@/i18n/navigation.public";
 import { cn } from "@/lib/utils";
 
@@ -26,14 +24,13 @@ export default function Logo({
       aria-label="Logo"
       className={cn("flex items-center gap-2.5", className)}
     >
-      <Image
-        className={imgClassName || "h-auto w-auto"}
+      <img
         src={src}
+        alt="Logo"
         width={width}
         height={height}
-        alt="Logo"
-        priority
-        unoptimized
+        className={imgClassName || "h-auto w-auto"}
+        style={{ display: "block" }}
       />
     </I18nLink>
   );
