@@ -24,12 +24,14 @@ export default function Logo({
       aria-label="Logo"
       className={cn("flex items-center gap-2.5", className)}
     >
+      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         className={imgClassName || "h-auto w-auto"}
         src={src}
         width={width}
         height={height}
         alt="Logo"
+        loading="eager"
       />
     </I18nLink>
   );

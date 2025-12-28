@@ -46,20 +46,13 @@ const Footer = () => {
             viewport={{ once: true }}
             className="lg:col-span-5"
           >
-            <div className="mb-6 flex items-center gap-4">
-              <Logo
-                src="/images/logo3.jpeg"
-                imgClassName="h-10 w-auto lg:h-12"
-                width={160}
-                height={160}
-              />
-              <Logo
-                src="/images/logoo.png"
-                imgClassName="h-8 w-auto lg:h-10"
-                width={160}
-                height={160}
-              />
-            </div>
+            <Logo
+              src="/images/logo1.png"
+              imgClassName="h-10 w-auto lg:h-12"
+              className="mb-6"
+              width={160}
+              height={160}
+            />
             <p className="mb-8 max-w-md text-base leading-relaxed text-gray-300">
               {t("companyDescription")}
             </p>
