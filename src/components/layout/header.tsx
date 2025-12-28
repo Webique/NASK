@@ -7,7 +7,6 @@ import * as React from "react";
 
 import LocaleSwitcher from "@/components/locale-switcher";
 import { Button } from "@/components/ui/button";
-import Logo from "@/components/ui/logo";
 import { siteConfig } from "@/config/site";
 import { Link } from "@/i18n/navigation.public";
 import { cn } from "@/lib/utils";
@@ -57,18 +56,13 @@ export default function Header() {
             transition={{ delay: 0.2, duration: 0.5 }}
             className="flex h-full items-center gap-3"
           >
-            {/* Mobile logo - always colored */}
-            <Logo
-              src="/images/logo1.png"
-              className="lg:hidden"
-              imgClassName="h-8 w-auto"
-            />
-            {/* Desktop logo - same logo regardless of scroll */}
-            <Logo
-              src="/images/logo1.png"
-              className="hidden lg:block"
-              imgClassName="h-9 w-auto"
-            />
+            <Link href="/" className="flex items-center">
+              <img
+                src="/images/logo1.png"
+                alt="Logo"
+                className="h-8 w-auto lg:h-9"
+              />
+            </Link>
           </m.div>
 
           {/* Desktop Navigation */}

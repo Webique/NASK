@@ -2,9 +2,9 @@
 
 import { Award, Globe, Mail, MapPin, Phone } from "lucide-react";
 import * as m from "motion/react-m";
+import Link from "next/link";
 import { useTranslations } from "next-intl";
 
-import Logo from "@/components/ui/logo";
 import { siteConfig } from "@/config/site";
 
 const Footer = () => {
@@ -46,13 +46,13 @@ const Footer = () => {
             viewport={{ once: true }}
             className="lg:col-span-5"
           >
-            <Logo
-              src="/images/logo1.png"
-              imgClassName="h-10 w-auto lg:h-12"
-              className="mb-6"
-              width={160}
-              height={160}
-            />
+            <Link href="/" className="mb-6 block">
+              <img
+                src="/images/logo1.png"
+                alt="Logo"
+                className="h-10 w-auto lg:h-12"
+              />
+            </Link>
             <p className="mb-8 max-w-md text-base leading-relaxed text-gray-300">
               {t("companyDescription")}
             </p>
