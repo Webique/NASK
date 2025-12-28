@@ -74,23 +74,23 @@ export async function generateMetadata({ params }: { params: Params }) {
     },
     icons: {
       icon: [
-        { url: "/images/logo1.jpg" },
+        { url: "/images/logo1.png" },
         {
-          url: "/images/logo1.jpg",
+          url: "/images/logo1.png",
           sizes: "192x192",
-          type: "image/jpeg"
+          type: "image/png"
         },
         {
-          url: "/images/logo1.jpg",
+          url: "/images/logo1.png",
           sizes: "512x512",
-          type: "image/jpeg"
+          type: "image/png"
         }
       ],
       apple: [
         {
-          url: "/images/logo1.jpg",
+          url: "/images/logo1.png",
           sizes: "180x180",
-          type: "image/jpeg"
+          type: "image/png"
         }
       ]
     },
