@@ -57,7 +57,7 @@ const Footer = () => {
               <img
                 src="/images/logoo.png"
                 alt="NASK Logo"
-                className="h-8 w-auto lg:h-10"
+                className="h-6 w-auto lg:h-8"
               />
             </div>
             <p className="mb-8 max-w-md text-base leading-relaxed text-gray-300">
