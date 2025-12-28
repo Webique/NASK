@@ -48,7 +48,7 @@ const Footer = () => {
           >
             <div className="mb-6 flex items-center gap-4">
               <Logo
-                src="/images/logo2.png"
+                src="/images/logo3.jpeg"
                 imgClassName="h-10 w-auto lg:h-12"
                 width={160}
                 height={160}
