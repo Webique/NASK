@@ -49,7 +49,7 @@ const Footer = () => {
             <div className="mb-6 flex items-center gap-4">
               <Link href="/" className="flex items-center">
                 <img
-                  src="/favicon/favicon.svg"
+                  src="/images/hero.jpeg"
                   alt="Logo"
                   className="h-10 w-auto lg:h-12"
                 />

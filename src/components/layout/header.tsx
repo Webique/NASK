@@ -58,7 +58,7 @@ export default function Header() {
           >
             <Link href="/" className="flex items-center">
               <img
-                src="/favicon/favicon.svg"
+                src="/images/hero.jpeg"
                 alt="Logo"
                 className="h-8 w-auto lg:h-9"
               />
