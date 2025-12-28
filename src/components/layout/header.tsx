@@ -59,13 +59,13 @@ export default function Header() {
           >
             {/* Mobile logo - always colored */}
             <Logo
-              src="/images/logo1.png"
+              src="/images/logoo.png"
               className="lg:hidden"
               imgClassName="h-8 w-auto"
             />
             {/* Desktop logo - same logo regardless of scroll */}
             <Logo
-              src="/images/logo1.png"
+              src="/images/logoo.png"
               className="hidden lg:block"
               imgClassName="h-9 w-auto"
             />
